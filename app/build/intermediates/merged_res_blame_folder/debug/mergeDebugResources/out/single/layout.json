@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "com.lightcore.hhreplica.app-mergeDebugResources-55:/layout/fragment_dashboard.xml",
+        "source": "com.lightcore.hhreplica.app-main-58:/layout/fragment_dashboard.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-mergeDebugResources-55:/layout/activity_main.xml",
+        "source": "com.lightcore.hhreplica.app-main-58:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-mergeDebugResources-55:/layout/fragment_full_vacancy.xml",
+        "source": "com.lightcore.hhreplica.app-main-58:/layout/fragment_full_vacancy.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-mergeDebugResources-55:/layout/offers_item.xml",
+        "source": "com.lightcore.hhreplica.app-main-58:/layout/offers_item.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-mergeDebugResources-55:/layout/vacanci_item.xml",
+        "source": "com.lightcore.hhreplica.app-main-58:/layout/vacanci_item.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-mergeDebugResources-55:/layout/fragment_home.xml",
+        "source": "com.lightcore.hhreplica.app-main-58:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-mergeDebugResources-55:/layout/fragment_notifications.xml",
+        "source": "com.lightcore.hhreplica.app-main-58:/layout/fragment_notifications.xml"
+    }
+]

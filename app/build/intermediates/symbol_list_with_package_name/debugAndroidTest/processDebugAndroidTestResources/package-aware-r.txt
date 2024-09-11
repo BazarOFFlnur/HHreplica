@@ -1,0 +1,3 @@
+com.lightcore.hhreplica.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

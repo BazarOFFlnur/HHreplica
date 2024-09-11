@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="start|top"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/oitem_style"
+    android:gravity="start|top"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/looktxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/sf_pro_regular"
+                android:maxLines="3"
+                android:singleLine="false"
+                android:textColor="#4CB24E"
+                android:textSize="16sp"
+                app:lineHeight="16.8sp" />
+
+            <TextView
+                android:id="@+id/vac_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/sf_pro_medium"
+                android:maxLines="3"
+                android:paddingTop="6dp"
+                android:singleLine="false"
+                android:textSize="16sp"
+                app:lineHeight="19.2sp" />
+
+            <TextView
+                android:id="@+id/zp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/sf_pro_medium"
+                android:maxLines="3"
+                android:paddingTop="6dp"
+                android:singleLine="false"
+                android:textSize="20sp"
+                app:lineHeight="24sp" />
+
+            <TextView
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/sf_pro_regular"
+                android:maxLines="3"
+                android:paddingTop="6dp"
+                android:singleLine="false"
+                app:lineHeight="16.8sp" />
+
+            <TextView
+                android:id="@+id/companyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/sf_pro_regular"
+                android:maxLines="3"
+                android:singleLine="false"
+                app:drawableEndCompat="@drawable/icon__3_"
+                app:drawableTintMode="src_in"
+                app:lineHeight="16.8sp" />
+
+            <TextView
+                android:id="@+id/opit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/sf_pro_regular"
+                android:maxLines="3"
+                android:paddingTop="6dp"
+                android:singleLine="false"
+                android:textSize="14sp"
+                app:drawableStartCompat="@drawable/state_default"
+                app:lineHeight="16.8sp" />
+
+            <TextView
+                android:id="@+id/datePublish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/sf_pro_regular"
+                android:maxLines="3"
+                android:paddingTop="6dp"
+                android:singleLine="false"
+                android:textColor="#858688"
+                app:lineHeight="16.8sp" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/isFavoriteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:backgroundTint="@android:color/transparent"
+            app:srcCompat="@drawable/icon_favorites_default" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/OtklickBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#4CB24E"
+        android:text="Откликнуться"
+        android:textColor="@color/white"
+        app:cornerRadius="50dp" />
+</LinearLayout>

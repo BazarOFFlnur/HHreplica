@@ -1,0 +1,4201 @@
+Index: app/src/main/java/com/lightcore/hhreplica/dataModels/VacancyDB.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/lightcore/hhreplica/dataModels/VacancyDB.kt b/app/src/main/java/com/lightcore/hhreplica/dataModels/VacancyDB.kt
+new file mode 100644
+--- /dev/null	(date 1726010426091)
++++ b/app/src/main/java/com/lightcore/hhreplica/dataModels/VacancyDB.kt	(date 1726010426091)
+@@ -0,0 +1,22 @@
++//package com.lightcore.hhreplica.dataModels
++//
++//import androidx.room.ColumnInfo
++//import androidx.room.Entity
++//import androidx.room.PrimaryKey
++//
++//@Entity(tableName = "vacancy")
++//data class VacancyDB(@PrimaryKey val id: String,
++//                      @ColumnInfo(name = "lookingnumber") val lookingNumber: Int? = null,
++//                      @ColumnInfo(name = "title")val title: String,
++//                      @ColumnInfo(name = "address")val address: Address,
++//                      @ColumnInfo(name = "company")val company: String,
++//                      @ColumnInfo(name = "experience")val experience: Experience,
++//                      @ColumnInfo(name = "publisheddate")val publishedDate: String,
++//                      @ColumnInfo(name = "isfavorite")val isFavorite: Boolean,
++//                      @ColumnInfo(name = "salary")val salary: Salary,
++//                      @ColumnInfo(name = "schedules")val schedules: List<String>,
++//                      @ColumnInfo(name = "appliednumber")val appliedNumber: Int? = null,
++//                      @ColumnInfo(name = "description")val description: String,
++//                      @ColumnInfo(name = "responsibilities")val responsibilities: String,
++//                      @ColumnInfo(name = "requirements")val requirements: String,val questions: List<String>
++//)
+Index: app/src/main/res/drawable/state_default.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/state_default.xml b/app/src/main/res/drawable/state_default.xml
+new file mode 100644
+--- /dev/null	(date 1725995289558)
++++ b/app/src/main/res/drawable/state_default.xml	(date 1725995289558)
+@@ -0,0 +1,12 @@
++<vector xmlns:android="http://schemas.android.com/apk/res/android"
++    android:width="16dp"
++    android:height="16dp"
++    android:viewportWidth="16"
++    android:viewportHeight="16">
++  <path
++      android:strokeWidth="1"
++      android:pathData="M5.375,12.615V5.692M10.25,12.615V5.692M5.75,5.308V3.769C5.75,3.344 6.086,3 6.5,3H9.125C9.539,3 9.875,3.344 9.875,3.769V5.308M3.5,13H12.5C13.328,13 14,12.311 14,11.462V6.846C14,5.996 13.328,5.308 12.5,5.308H3.5C2.672,5.308 2,5.996 2,6.846V11.462C2,12.311 2.672,13 3.5,13Z"
++      android:fillColor="#00000000"
++      android:strokeColor="#ffffff"
++      android:strokeLineCap="round"/>
++</vector>
+Index: app/src/test/java/com/lightcore/hhreplica/ExampleUnitTest.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/test/java/com/lightcore/hhreplica/ExampleUnitTest.kt b/app/src/test/java/com/lightcore/hhreplica/ExampleUnitTest.kt
+new file mode 100644
+--- /dev/null	(date 1725527774203)
++++ b/app/src/test/java/com/lightcore/hhreplica/ExampleUnitTest.kt	(date 1725527774203)
+@@ -0,0 +1,17 @@
++package com.lightcore.hhreplica
++
++import org.junit.Test
++
++import org.junit.Assert.*
++
++/**
++ * Example local unit test, which will execute on the development machine (host).
++ *
++ * See [testing documentation](http://d.android.com/tools/testing).
++ */
++class ExampleUnitTest {
++    @Test
++    fun addition_isCorrect() {
++        assertEquals(4, 2 + 2)
++    }
++}
+\ No newline at end of file
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1725618524287)
++++ b/.idea/.gitignore	(date 1725618524287)
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml
+Index: app/src/main/res/drawable/nav_item_color.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/nav_item_color.xml b/app/src/main/res/drawable/nav_item_color.xml
+new file mode 100644
+--- /dev/null	(date 1725620028441)
++++ b/app/src/main/res/drawable/nav_item_color.xml	(date 1725620028441)
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="utf-8"?>
++<selector xmlns:android="http://schemas.android.com/apk/res/android">
++    <!-- Цвет для активного элемента -->
++    <item android:color="#2B7EFE" android:state_checked="true" />
++    <!-- Цвет для неактивных элементов -->
++    <item android:color="#9F9F9F" android:state_checked="false" />
++</selector>
+Index: app/schemas/AppDatabase/1.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/schemas/AppDatabase/1.json b/app/schemas/AppDatabase/1.json
+new file mode 100644
+--- /dev/null	(date 1726006475378)
++++ b/app/schemas/AppDatabase/1.json	(date 1726006475378)
+@@ -0,0 +1,112 @@
++{
++  "formatVersion": 1,
++  "database": {
++    "version": 1,
++    "identityHash": "e1dc1036a5c0ccab8ca722dbc28611a3",
++    "entities": [
++      {
++        "tableName": "vacancies",
++        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `lookingNumber` INTEGER, `title` TEXT NOT NULL, `address` TEXT NOT NULL, `company` TEXT NOT NULL, `experience` TEXT NOT NULL, `publishedDate` TEXT NOT NULL, `isFavorite` INTEGER NOT NULL, `salary` TEXT NOT NULL, `schedules` TEXT NOT NULL, `appliedNumber` INTEGER, `description` TEXT NOT NULL, `responsibilities` TEXT NOT NULL, `questions` TEXT NOT NULL, PRIMARY KEY(`id`))",
++        "fields": [
++          {
++            "fieldPath": "id",
++            "columnName": "id",
++            "affinity": "TEXT",
++            "notNull": true
++          },
++          {
++            "fieldPath": "lookingNumber",
++            "columnName": "lookingNumber",
++            "affinity": "INTEGER",
++            "notNull": false
++          },
++          {
++            "fieldPath": "title",
++            "columnName": "title",
++            "affinity": "TEXT",
++            "notNull": true
++          },
++          {
++            "fieldPath": "address",
++            "columnName": "address",
++            "affinity": "TEXT",
++            "notNull": true
++          },
++          {
++            "fieldPath": "company",
++            "columnName": "company",
++            "affinity": "TEXT",
++            "notNull": true
++          },
++          {
++            "fieldPath": "experience",
++            "columnName": "experience",
++            "affinity": "TEXT",
++            "notNull": true
++          },
++          {
++            "fieldPath": "publishedDate",
++            "columnName": "publishedDate",
++            "affinity": "TEXT",
++            "notNull": true
++          },
++          {
++            "fieldPath": "isFavorite",
++            "columnName": "isFavorite",
++            "affinity": "INTEGER",
++            "notNull": true
++          },
++          {
++            "fieldPath": "salary",
++            "columnName": "salary",
++            "affinity": "TEXT",
++            "notNull": true
++          },
++          {
++            "fieldPath": "schedules",
++            "columnName": "schedules",
++            "affinity": "TEXT",
++            "notNull": true
++          },
++          {
++            "fieldPath": "appliedNumber",
++            "columnName": "appliedNumber",
++            "affinity": "INTEGER",
++            "notNull": false
++          },
++          {
++            "fieldPath": "description",
++            "columnName": "description",
++            "affinity": "TEXT",
++            "notNull": true
++          },
++          {
++            "fieldPath": "responsibilities",
++            "columnName": "responsibilities",
++            "affinity": "TEXT",
++            "notNull": true
++          },
++          {
++            "fieldPath": "questions",
++            "columnName": "questions",
++            "affinity": "TEXT",
++            "notNull": true
++          }
++        ],
++        "primaryKey": {
++          "autoGenerate": false,
++          "columnNames": [
++            "id"
++          ]
++        },
++        "indices": [],
++        "foreignKeys": []
++      }
++    ],
++    "views": [],
++    "setupQueries": [
++      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
++      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'e1dc1036a5c0ccab8ca722dbc28611a3')"
++    ]
++  }
++}
+\ No newline at end of file
+Index: .idea/deploymentTargetSelector.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/deploymentTargetSelector.xml b/.idea/deploymentTargetSelector.xml
+new file mode 100644
+--- /dev/null	(date 1725533557698)
++++ b/.idea/deploymentTargetSelector.xml	(date 1725533557698)
+@@ -0,0 +1,10 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="deploymentTargetSelector">
++    <selectionStates>
++      <SelectionState runConfigName="app">
++        <option name="selectionMode" value="DROPDOWN" />
++      </SelectionState>
++    </selectionStates>
++  </component>
++</project>
+\ No newline at end of file
+Index: app/build.gradle.kts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/build.gradle.kts b/app/build.gradle.kts
+new file mode 100644
+--- /dev/null	(date 1726010114700)
++++ b/app/build.gradle.kts	(date 1726010114700)
+@@ -0,0 +1,76 @@
++plugins {
++    alias(libs.plugins.android.application)
++    alias(libs.plugins.jetbrains.kotlin.android)
++    id("kotlin-kapt")
++}
++
++android {
++    namespace = "com.lightcore.hhreplica"
++    compileSdk = 34
++
++    defaultConfig {
++        applicationId = "com.lightcore.hhreplica"
++        minSdk = 24
++        targetSdk = 34
++        versionCode = 1
++        versionName = "1.0"
++        kapt {
++            arguments {arg("room.schemaLocation", "$projectDir/schemas")}
++        }
++        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
++    }
++
++    buildTypes {
++        release {
++            isMinifyEnabled = false
++            proguardFiles(
++                getDefaultProguardFile("proguard-android-optimize.txt"),
++                "proguard-rules.pro"
++            )
++        }
++    }
++    compileOptions {
++        sourceCompatibility = JavaVersion.VERSION_1_8
++        targetCompatibility = JavaVersion.VERSION_1_8
++    }
++    kotlinOptions {
++        jvmTarget = "1.8"
++    }
++    buildFeatures {
++        viewBinding = true
++    }
++}
++
++dependencies {
++    val room_version = "2.6.1"
++    implementation (libs.androidx.room.runtime)
++    annotationProcessor( libs.androidx.room.compiler)
++    implementation(libs.gson)
++    // To use Kotlin annotation processing tool (kapt)
++    kapt (libs.androidx.room.compiler)
++    // optional - RxJava2 support for Room
++    implementation(libs.androidx.room.rxjava2)
++
++    // optional - RxJava3 support for Room
++    implementation (libs.androidx.room.rxjava3)
++
++    // optional - Guava support for Room, including Optional and ListenableFuture
++    implementation (libs.androidx.room.guava)
++
++    // optional - Test helpers
++    testImplementation( libs.androidx.room.testing)
++
++    // optional - Paging 3 Integration
++    implementation( libs.androidx.room.paging)
++    implementation(libs.androidx.core.ktx)
++    implementation(libs.androidx.appcompat)
++    implementation(libs.material)
++    implementation(libs.androidx.constraintlayout)
++    implementation(libs.androidx.lifecycle.livedata.ktx)
++    implementation(libs.androidx.lifecycle.viewmodel.ktx)
++    implementation(libs.androidx.navigation.fragment.ktx)
++    implementation(libs.androidx.navigation.ui.ktx)
++    testImplementation(libs.junit)
++    androidTestImplementation(libs.androidx.junit)
++    androidTestImplementation(libs.androidx.espresso.core)
++}
+\ No newline at end of file
+Index: app/src/main/res/drawable/favorite_active_icon.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/favorite_active_icon.xml b/app/src/main/res/drawable/favorite_active_icon.xml
+new file mode 100644
+--- /dev/null	(date 1725992932951)
++++ b/app/src/main/res/drawable/favorite_active_icon.xml	(date 1725992932951)
+@@ -0,0 +1,18 @@
++<vector xmlns:android="http://schemas.android.com/apk/res/android"
++    android:width="24dp"
++    android:height="24dp"
++    android:viewportWidth="24"
++    android:viewportHeight="24">
++  <path
++      android:strokeWidth="1"
++      android:pathData="M11.556,7.138C11.556,7.138 11.556,7.138 11.556,7.138L11.555,7.138L11.551,7.129C11.546,7.12 11.538,7.105 11.527,7.086C11.505,7.047 11.47,6.988 11.423,6.914C11.328,6.765 11.185,6.557 10.993,6.323C10.331,5.52 9.155,4.5 7.457,4.5C5.263,4.5 3.523,6.281 3.5,8.406L11.556,7.138ZM11.556,7.138L11.556,7.138C11.556,7.139 11.556,7.139 11.556,7.139C11.556,7.139 11.556,7.139 11.556,7.139C11.556,7.139 11.556,7.139 11.556,7.139C11.556,7.139 11.556,7.139 11.556,7.139L11.556,7.139C11.642,7.305 11.813,7.409 12,7.409C12.187,7.409 12.359,7.305 12.444,7.138L12.444,7.138L12.445,7.138L12.449,7.129C12.454,7.12 12.462,7.105 12.473,7.086C12.495,7.047 12.53,6.988 12.577,6.914C12.672,6.765 12.815,6.557 13.007,6.323C13.669,5.52 14.845,4.5 16.543,4.5C18.737,4.5 20.477,6.281 20.5,8.406C20.524,10.738 19.574,12.751 18.04,14.564C16.5,16.384 14.392,17.979 12.147,19.456L12.146,19.457C12.105,19.484 12.054,19.5 12,19.5C11.946,19.5 11.895,19.484 11.854,19.457L11.853,19.456C9.608,17.979 7.499,16.384 5.96,14.564C4.426,12.751 3.476,10.738 3.5,8.406L11.556,7.138ZM11.576,4.721L11.91,4.374C11.941,4.403 11.97,4.433 12,4.462C12.03,4.433 12.059,4.403 12.09,4.374L12.424,4.721L12.09,4.374C13.017,3.481 14.506,2.5 16.543,2.5C19.851,2.5 22.466,5.182 22.499,8.385L22.5,8.385C22.53,11.328 21.314,13.791 19.567,15.856C17.839,17.899 15.537,19.619 13.247,21.127L11.576,4.721ZM11.576,4.721L11.91,4.374C10.983,3.481 9.494,2.5 7.457,2.5C4.149,2.5 1.534,5.182 1.501,8.385L1.501,8.385M11.576,4.721L1.501,8.385M1.501,8.385C1.47,11.328 2.686,13.791 4.433,15.856C6.161,17.899 8.463,19.62 10.753,21.127C11.125,21.372 11.559,21.5 12,21.5M1.501,8.385L12,21.5M12,21.5C12.441,21.5 12.875,21.372 13.247,21.127L12,21.5Z"
++      android:strokeLineJoin="round"
++      android:fillColor="#2B7EFE"
++      android:strokeColor="#2B7EFE"
++      android:strokeLineCap="round"/>
++  <path
++      android:strokeWidth="1"
++      android:pathData="M3,7L5,5L6.5,4L9.5,4.5L11.5,6H12.5L14.5,4.5L17,4L20,5.5L21,8.5L20,12.5L17,16.5L12,20L9.5,19L5.5,15.5L3,10.5V7Z"
++      android:fillColor="#2B7EFE"
++      android:strokeColor="#2B7EFE"/>
++</vector>
+Index: app/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/.gitignore b/app/.gitignore
+new file mode 100644
+--- /dev/null	(date 1725527772942)
++++ b/app/.gitignore	(date 1725527772942)
+@@ -0,0 +1,1 @@
++/build
+\ No newline at end of file
+Index: app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/AndroidManifest.xml b/app/src/main/AndroidManifest.xml
+new file mode 100644
+--- /dev/null	(date 1725988546443)
++++ b/app/src/main/AndroidManifest.xml	(date 1725988546443)
+@@ -0,0 +1,29 @@
++<?xml version="1.0" encoding="utf-8"?>
++<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:tools="http://schemas.android.com/tools">
++
++    <application
++        android:allowBackup="true"
++        android:dataExtractionRules="@xml/data_extraction_rules"
++        android:fullBackupContent="@xml/backup_rules"
++        android:icon="@mipmap/ic_launcher"
++        android:label="@string/app_name"
++        android:roundIcon="@mipmap/ic_launcher_round"
++        android:supportsRtl="true"
++        android:theme="@style/Theme.Hhreplica"
++        tools:targetApi="31">
++        <activity
++            android:name=".MainActivity"
++            android:exported="true">
++            <intent-filter>
++                <action android:name="android.intent.action.MAIN" />
++
++                <category android:name="android.intent.category.LAUNCHER" />
++            </intent-filter>
++        </activity>
++        <meta-data
++            android:name="preloaded_fonts"
++            android:resource="@array/preloaded_fonts" />
++    </application>
++
++</manifest>
+\ No newline at end of file
+Index: app/src/main/res/drawable/edit_style.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/edit_style.xml b/app/src/main/res/drawable/edit_style.xml
+new file mode 100644
+--- /dev/null	(date 1725996045975)
++++ b/app/src/main/res/drawable/edit_style.xml	(date 1725996045975)
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="utf-8"?>
++<shape xmlns:android="http://schemas.android.com/apk/res/android">
++    <!-- Цвет фона кнопки -->
++    <solid android:color="#313234" />
++
++    <!-- Закругленные углы -->
++    <corners android:radius="8dp" />
++
++</shape>
+\ No newline at end of file
+Index: app/src/main/res/drawable/icon__3_.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/icon__3_.xml b/app/src/main/res/drawable/icon__3_.xml
+new file mode 100644
+--- /dev/null	(date 1725995667429)
++++ b/app/src/main/res/drawable/icon__3_.xml	(date 1725995667429)
+@@ -0,0 +1,13 @@
++<vector xmlns:android="http://schemas.android.com/apk/res/android"
++    android:width="16dp"
++    android:height="17dp"
++    android:viewportWidth="16"
++    android:viewportHeight="17">
++  <path
++      android:strokeWidth="1"
++      android:pathData="M10.095,7.155L7.25,10L6.28,9.03M8,2.5C4.686,2.5 2,5.186 2,8.5C2,11.814 4.686,14.5 8,14.5C11.314,14.5 14,11.814 14,8.5C14,5.186 11.314,2.5 8,2.5Z"
++      android:strokeLineJoin="round"
++      android:fillColor="#00000000"
++      android:strokeColor="#858688"
++      android:strokeLineCap="round"/>
++</vector>
+Index: app/src/androidTest/java/com/lightcore/hhreplica/ExampleInstrumentedTest.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/androidTest/java/com/lightcore/hhreplica/ExampleInstrumentedTest.kt b/app/src/androidTest/java/com/lightcore/hhreplica/ExampleInstrumentedTest.kt
+new file mode 100644
+--- /dev/null	(date 1725527774245)
++++ b/app/src/androidTest/java/com/lightcore/hhreplica/ExampleInstrumentedTest.kt	(date 1725527774245)
+@@ -0,0 +1,24 @@
++package com.lightcore.hhreplica
++
++import androidx.test.platform.app.InstrumentationRegistry
++import androidx.test.ext.junit.runners.AndroidJUnit4
++
++import org.junit.Test
++import org.junit.runner.RunWith
++
++import org.junit.Assert.*
++
++/**
++ * Instrumented test, which will execute on an Android device.
++ *
++ * See [testing documentation](http://d.android.com/tools/testing).
++ */
++@RunWith(AndroidJUnit4::class)
++class ExampleInstrumentedTest {
++    @Test
++    fun useAppContext() {
++        // Context of the app under test.
++        val appContext = InstrumentationRegistry.getInstrumentation().targetContext
++        assertEquals("com.lightcore.hhreplica", appContext.packageName)
++    }
++}
+\ No newline at end of file
+Index: app/src/main/java/com/lightcore/hhreplica/Data.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/lightcore/hhreplica/Data.kt b/app/src/main/java/com/lightcore/hhreplica/Data.kt
+new file mode 100644
+--- /dev/null	(date 1726011059163)
++++ b/app/src/main/java/com/lightcore/hhreplica/Data.kt	(date 1726011059163)
+@@ -0,0 +1,115 @@
++package com.lightcore.hhreplica
++
++import android.content.Context
++import com.lightcore.hhreplica.dataModels.Address
++import com.lightcore.hhreplica.dataModels.Experience
++import com.lightcore.hhreplica.dataModels.Offers
++import com.lightcore.hhreplica.dataModels.Salary
++import com.lightcore.hhreplica.dataModels.Vacancy
++import org.json.JSONObject
++import java.io.IOException
++import java.io.InputStream
++
++class Data {
++    // Чтение mock.json из папки assets
++    fun loadJSONFromAsset(context: Context): String? {
++        return try {
++            val inputStream: InputStream = context.resources.openRawResource(R.raw.mock_json)
++            val size: Int = inputStream.available()
++            val buffer = ByteArray(size)
++            inputStream.read(buffer)
++            inputStream.close()
++            String(buffer, Charsets.UTF_8)
++        } catch (ex: IOException) {
++            ex.printStackTrace()
++            null
++        }
++    }
++
++    fun parseJsonOffers(context: Context): List<Offers> {
++        val jsonString = loadJSONFromAsset(context)
++        val offersList = mutableListOf<Offers>()
++        if (jsonString != null) {
++            val jsonObject = JSONObject(jsonString)
++            val offersArray = jsonObject.getJSONArray("offers")
++            for (i in 0 until offersArray.length()) {
++                val offer = offersArray.getJSONObject(i)
++                val id = offer.optString("id")
++                val title = offer.optString("title")
++                val link = offer.optString("link")
++                val button = offer.optJSONObject("button")
++                val buttonText = button?.optString("text")
++                val img = offer.optString("img")
++
++                offersList.add(Offers(id, title, link, buttonText, img))
++            }
++        }
++        return offersList
++    }
++    fun parseJsonVacancies(context: Context): List<Vacancy> {
++        val jsonString = loadJSONFromAsset(context)
++        val vacancyList = mutableListOf<Vacancy>()
++
++        if (jsonString != null) {
++            val jsonObject = JSONObject(jsonString)
++            val vacanciesArray = jsonObject.getJSONArray("vacancies")
++
++            for (i in 0 until vacanciesArray.length()) {
++                val vacancyJson = vacanciesArray.getJSONObject(i)
++
++                val addressJson = vacancyJson.getJSONObject("address")
++                val address = Address(
++                    town = addressJson.optString("town"),
++                    street = addressJson.optString("street"),
++                    house = addressJson.optString("house")
++                )
++
++                val experienceJson = vacancyJson.getJSONObject("experience")
++                val experience = Experience(
++                    previewText = experienceJson.optString("previewText"),
++                    text = experienceJson.optString("text")
++                )
++
++                val salaryJson = vacancyJson.optJSONObject("salary")
++                val salary = Salary(
++                    short = salaryJson?.optString("short"),
++                    full = salaryJson?.optString("full")
++                )
++
++                val schedulesArray = vacancyJson.getJSONArray("schedules")
++                val schedules = mutableListOf<String>()
++                for (j in 0 until schedulesArray.length()) {
++                    schedules.add(schedulesArray.getString(j))
++                }
++
++                val questionsArray = vacancyJson.getJSONArray("questions")
++                val questions = mutableListOf<String>()
++                for (j in 0 until questionsArray.length()) {
++                    questions.add(questionsArray.getString(j))
++                }
++
++                val vacancy = Vacancy(
++                    id = vacancyJson.optString("id"),
++                    lookingNumber = vacancyJson.optInt("lookingNumber"),
++                    title = vacancyJson.optString("title"),
++                    address = address,
++                    company = vacancyJson.optString("company"),
++                    experience = experience,
++                    publishedDate = vacancyJson.optString("publishedDate"),
++                    isFavorite = vacancyJson.optBoolean("isFavorite"),
++                    salary = salary,
++                    schedules = schedules,
++                    appliedNumber = if (vacancyJson.has("appliedNumber")) vacancyJson.optInt("appliedNumber") else null,
++                    description = vacancyJson.optString("description"),
++                    responsibilities = vacancyJson.optString("responsibilities"),
++                    type = "null",
++                    questions = questions
++                )
++
++                vacancyList.add(vacancy)
++            }
++        }
++        return vacancyList
++    }
++
++}
+\ No newline at end of file
+Index: app/src/main/res/raw/mock_json.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/raw/mock_json.json b/app/src/main/res/raw/mock_json.json
+new file mode 100644
+--- /dev/null	(date 1725975347773)
++++ b/app/src/main/res/raw/mock_json.json	(date 1725975347773)
+@@ -0,0 +1,226 @@
++{
++ "offers": [
++   {
++     "id": "near_vacancies",
++     "title": "Вакансии рядом с вами",
++     "link": "https://hh.ru/",
++     "img": "ryadom_icon"
++   },
++   {
++     "id": "level_up_resume",
++     "title": "Поднять резюме в поиске",
++     "button": {
++       "text": "Поднять"
++     },
++     "link": "https://hh.ru/mentors?from\u003dfooter_new\u0026hhtmFromLabel\u003dfooter_new\u0026hhtmFrom\u003dmain\u0026purposeId\u003d1",
++     "img": "up_search_icon"
++   },
++   {
++     "id": "temporary_job",
++     "title": "  Временная работа или подработка",
++     "link": "https://hh.ru/",
++     "img": "temp_icon"
++   },
++   {
++     "title": "Полезные статьи и советы",
++     "link": "https://hh.ru/articles?hhtmFrom\u003dmain"
++   }
++ ],
++ "vacancies": [
++   {
++     "id": "cbf0c984-7c6c-4ada-82da-e29dc698bb50",
++     "lookingNumber": 2,
++     "title": "UI/UX дизайнер",
++     "address": {
++       "town": "Минск",
++       "street": "улица Бирюзова",
++       "house": "4/5"
++     },
++     "company": "Мобирикс",
++     "experience": {
++       "previewText": "Опыт от 1 до 3 лет",
++       "text": "1–3 года"
++     },
++     "publishedDate": "2024-02-20",
++     "isFavorite": false,
++     "salary": {
++       "full": "Уровень дохода не указан"
++     },
++     "schedules": [
++       "полная занятость",
++       "полный день"
++     ],
++     "appliedNumber": 147,
++     "description": "Мы ищем специалиста на позицию UX/UI Designer, который вместе с коллегами будет заниматься проектированием пользовательских интерфейсов внутренних и внешних продуктов компании.",
++     "responsibilities": "- проектирование пользовательских сценариев и создание прототипов;\n- разработка интерфейсов для продуктов компании (Web+App);\n- работа над созданием и улучшением Дизайн-системы;\n- взаимодействие с командами frontend-разработки;\n- контроль качества внедрения дизайна;\n- ситуативно: создание презентаций и других материалов на основе фирменного стиля компании",
++     "questions": [
++       "Где располагается место работы?",
++       "Какой график работы?",
++       "Вакансия открыта?",
++       "Какая оплата труда?"
++     ]
++   },
++   {
++     "id": "54a876a5-2205-48ba-9498-cfecff4baa6e",
++     "lookingNumber": 17,
++     "title": "UI/UX-дизайнер / Web-дизайнер / Дизайнер интерфейсов",
++     "address": {
++       "town": "Казань",
++       "street": "улица Чистопольская",
++       "house": "20/10"
++     },
++     "company": "Шафигуллин Шакир",
++     "experience": {
++       "previewText": "Опыт от 1 до 3 лет",
++       "text": "1–3 года"
++     },
++     "publishedDate": "2024-03-06",
++     "isFavorite": false,
++     "salary": {
++       "short": "20 000 до 50 000 ₽",
++       "full": "от 20 000 до 50 000 ₽ на руки"
++     },
++     "schedules": [
++       "частичная занятость",
++       "полный день"
++     ],
++     "description": "Мы разрабатываем мобильные приложения, web-приложения и сайты под ключ.\n\nНам в команду нужен UX/UI Designer!",
++     "responsibilities": "- Разработка дизайна Web+App (обязательно Figma)\n\n- Работа над созданием и улучшением систем;\n\n- Взаимодействие с командами frontend-разработки и backend-разработки",
++     "questions": [
++       "Где располагается место работы?",
++       "Какой график работы?",
++       "Как с вами связаться?"
++     ]
++   },
++   {
++     "id": "75c84407-52e1-4cce-a73a-ff2d3ac031b3",
++     "title": "UX/UI Designer",
++     "address": {
++       "town": "Казань",
++       "street": "улица Пушкина",
++       "house": "2"
++     },
++     "company": "Aston",
++     "experience": {
++       "previewText": "Опыт от 3 до 6 лет",
++       "text": "3–6 лет"
++     },
++     "publishedDate": "2024-02-28",
++     "isFavorite": true,
++     "salary": {
++       "full": "Уровень дохода не указан"
++     },
++     "schedules": [
++       "полная занятость",
++       "удаленная работа"
++     ],
++     "appliedNumber": 11,
++     "description": "Мы – аутсорсинговая аккредитованная IT-компания Aston, разрабатываем программное обеспечение на заказ и оказываем услуги IT-аутсорсинга предприятиям, организациям и стартапам. Приоритетные направления – финансовые технологии, телеком, ритейл, недвижимость и другие. Среди наших клиентов – компании Тинькофф, Х5 Retail Group, Банки.ру, ВТБ Банк, Альфа Банк, Цифра и другие.\n\nЗаказчик входит в топ-10 российских банков по величине активов, кредитного портфеля, размеру средств, привлеченных от клиентов, и нормативного капитала.\n\nБанк активно развивает онлайн-сервисы и работает по стратегии Mobile first. В компании есть отдельное подразделение, в котором создаются digital-продукты и внедряются цифровые технологии.",
++     "responsibilities": "- совместно с Product Owner определять бизнес-метрики, потребности клиентов банка, фиксировать их в формате задач и метрик успешности;\n- изучать лучшие практики и недостатки аналогичных продуктов, проходить путь клиента и формулировать гипотезы решения задач вместе с продуктовой командой;\n- создавать прототипы для проверки гипотез;\n- передавать прототипы на Usability-тесты и контролировать их проведение;\n- улучшать решения по результатам тестов и наблюдений;\n- готовить чистовые макеты на основе компонентов дизайн-системы банка для передачи в разработку;\n- создавать и описывать новые компоненты дизайн-системы по принятым в банке стандартам;\n- отдавать на дизайн-чек макеты и проверять решения других дизайнеров;\n- передавать макеты разработчикам и отвечать на возникающие в процессе разработки вопросы;\n- проводить дизайн-ревью результата разработки и формулировать список замечаний для разработчиков;\n- итеративно совершенствовать дизайн цифрового продукта на основе метрик и отзывов клиентов;\n- участвовать в улучшении процессов центра компетенций продуктового дизайна.",
++     "questions": [
++       "Где располагается место работы?",
++       "Какой график работы?",
++       "Какая оплата труда?"
++     ]
++   },
++   {
++     "id": "16f88865-ae74-4b7c-9d85-b68334bb97db",
++     "lookingNumber": 57,
++     "title": "Веб-дизайнер",
++     "address": {
++       "town": "Казань",
++       "street": "улица Пушкина",
++       "house": "57"
++     },
++     "company": "Алабуга. Маркетинг и PR",
++     "experience": {
++       "previewText": "Без опыта",
++       "text": "не требуется"
++     },
++     "publishedDate": "2024-03-02",
++     "isFavorite": false,
++     "salary": {
++       "short": "от 60 000 ₽",
++       "full": "от 60 000 ₽ до вычета налогов"
++     },
++     "schedules": [
++       "частичная занятость",
++       "полный день"
++     ],
++     "appliedNumber": 7,
++     "responsibilities": "- Разработка новых сайтов, приложений, лэндингов;\n- Создание и доработка прототипов готовых к сдаче в верстку;\n- Взаимодействие с подрядчиками по разработке сайтов\n- Доработка существующих сайтов;\n- Проектирование интерфейсов, организация UI/UX-исследований;\n- Взаимодействие с Frontend и Backend разработчиками, техническими специалистами;\n- Работа с дизайн системой, её поддержание.",
++     "questions": [
++       "Где располагается место работы?",
++       "Какой график работы?",
++       "Вакансия открыта?",
++       "Какая оплата труда?"
++     ]
++   },
++   {
++     "id": "26f88856-ae74-4b7c-9d85-b68334bb97db",
++     "lookingNumber": 29,
++     "title": "Ведущий продуктовый дизайнер",
++     "address": {
++       "town": "Минск",
++       "street": "проспект Хасанова",
++       "house": "15"
++     },
++     "company": "ПАО Ростелеком",
++     "experience": {
++       "previewText": "Опыт от 3 до 6 лет",
++       "text": "3–6 лет"
++     },
++     "publishedDate": "2024-02-19",
++     "isFavorite": false,
++     "salary": {
++       "full": "Уровень дохода не указан"
++     },
++     "schedules": [
++       "полная занятость",
++       "удаленная работа"
++     ],
++     "description": "Перед вами не просто вакансия. Перед вами — уникальные возможности, от которых вас отделяет всего один клик.",
++     "responsibilities": "— Готовить макеты на основании прототипа и/или описания пользовательских сценариев;\n— Анализировать бизнесовые и пользовательские требования, уточнять постановки от аналитиков и проектировщиков;\n— Создавать графические и стилистические элементы для портала, приложений и промо страниц;\n— Оптимизировать дизайн существующих интерфейсов;\n— Осуществлять авторский контроль над исполнителями;\n— Развивать существующую дизайн-систему и UI-киты;\n— Помогать в подготовке продающих фичи презентаций.",
++     "questions": [
++       "Где располагается место работы?",
++       "Какой график работы?",
++       "Вакансия открыта?",
++       "Какая оплата труда?"
++     ]
++   },
++   {
++     "id": "15f88865-ae74-4b7c-9d81-b78334bb97db",
++     "lookingNumber": 1,
++     "title": "Product Designer",
++     "address": {
++       "town": "Минск",
++       "street": "улица Побратимова",
++       "house": "5"
++     },
++     "company": "TravelLine",
++     "experience": {
++       "previewText": "Опыт от 3 до 6 лет",
++       "text": "3–6 лет"
++     },
++     "publishedDate": "2024-02-02",
++     "isFavorite": false,
++     "salary": {
++       "full": "Уровень дохода не указан"
++     },
++     "schedules": [
++       "полная занятость",
++       "полный день"
++     ],
++     "appliedNumber": 1,
++     "description": "В TravelLine мы разрабатываем единую функциональную Платформу для автоматизации процессов гостиничного бизнеса. Всё, что связано с онлайн-бронированием и управлением номерным фондом в отелях — это к нам. Ежемесячно через наши системы бронируют более 1,5 миллионов гостей.\n\nМы ищем коллегу в команду продуктовых дизайнеров на В2В продукт.\nСейчас в нашей команде 10 продуктовых дизайнеров, которые занимаются В2В, В2С и В2Е продуктами.\nВ начале пути у тебя будет наставник, который поможет в адаптации к новой команде.",
++     "responsibilities": "- Проектировать интерфейс B2B продукта: сопровождать и улучшать текущие решения, поддерживать консистентность\n\n- Понимать потребности и боли пользователей, логику взаимодействия пользователя с продуктом, участвовать в этапе discovery\n\n- Создавать интерактивные прототипы\n\n- Проводить юзабилити-тестирования и ревью реализации решений\n\n- Работать внутри продуктовой команды: коммуницировать с дизайнерами, продакт и проджект менеджерами, аналитиками, разработчиками и тестировщиками.",
++     "questions": [
++       "Где располагается место работы?",
++       "Какой график работы?",
++       "Вакансия открыта?",
++       "Какая оплата труда?",
++       "Как с вами связаться?"
++     ]
++   }
++ ]
++}
+\ No newline at end of file
+Index: app/proguard-rules.pro
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/proguard-rules.pro b/app/proguard-rules.pro
+new file mode 100644
+--- /dev/null	(date 1725527773044)
++++ b/app/proguard-rules.pro	(date 1725527773044)
+@@ -0,0 +1,21 @@
++# Add project specific ProGuard rules here.
++# You can control the set of applied configuration files using the
++# proguardFiles setting in build.gradle.
++#
++# For more details, see
++#   http://developer.android.com/guide/developing/tools/proguard.html
++
++# If your project uses WebView with JS, uncomment the following
++# and specify the fully qualified class name to the JavaScript interface
++# class:
++#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
++#   public *;
++#}
++
++# Uncomment this to preserve the line number information for
++# debugging stack traces.
++#-keepattributes SourceFile,LineNumberTable
++
++# If you keep the line number information, uncomment this to
++# hide the original source file name.
++#-renamesourcefileattribute SourceFile
+\ No newline at end of file
+Index: app/src/main/java/com/lightcore/hhreplica/Main.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/lightcore/hhreplica/Main.kt b/app/src/main/java/com/lightcore/hhreplica/Main.kt
+new file mode 100644
+--- /dev/null	(date 1725986189334)
++++ b/app/src/main/java/com/lightcore/hhreplica/Main.kt	(date 1725986189334)
+@@ -0,0 +1,16 @@
++package com.lightcore.hhreplica
++
++import android.content.Context
++import com.lightcore.hhreplica.dataModels.Offers
++import com.lightcore.hhreplica.dataModels.Vacancy
++
++class Main {
++    fun getOffers(context: Context): List<Offers> {
++        val data = Data()
++        return data.parseJsonOffers(context = context)
++    }
++    fun getVacancyList(context: Context): List<Vacancy>{
++        val data = Data()
++        return data.parseJsonVacancies(context)
++    }
++}
+\ No newline at end of file
+Index: app/schemas/com.lightcore.hhreplica.DB.AppDatabase/1.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/schemas/com.lightcore.hhreplica.DB.AppDatabase/1.json b/app/schemas/com.lightcore.hhreplica.DB.AppDatabase/1.json
+new file mode 100644
+--- /dev/null	(date 1726005688363)
++++ b/app/schemas/com.lightcore.hhreplica.DB.AppDatabase/1.json	(date 1726005688363)
+@@ -0,0 +1,110 @@
++{
++  "formatVersion": 1,
++  "database": {
++    "version": 1,
++    "identityHash": "6eaf8146c5c9198712ed577142f35c40",
++    "entities": [
++      {
++        "tableName": "vacancies",
++        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT, `lookingNumber` INTEGER, `title` TEXT NOT NULL, `address` TEXT NOT NULL, `company` TEXT NOT NULL, `experience` TEXT NOT NULL, `publishedDate` TEXT NOT NULL, `isFavorite` INTEGER NOT NULL, `salary` TEXT NOT NULL, `schedules` TEXT NOT NULL, `appliedNumber` INTEGER, `description` TEXT NOT NULL, `responsibilities` TEXT NOT NULL, `questions` TEXT NOT NULL)",
++        "fields": [
++          {
++            "fieldPath": "id",
++            "columnName": "id",
++            "affinity": "TEXT",
++            "notNull": false
++          },
++          {
++            "fieldPath": "lookingNumber",
++            "columnName": "lookingNumber",
++            "affinity": "INTEGER",
++            "notNull": false
++          },
++          {
++            "fieldPath": "title",
++            "columnName": "title",
++            "affinity": "TEXT",
++            "notNull": true
++          },
++          {
++            "fieldPath": "address",
++            "columnName": "address",
++            "affinity": "TEXT",
++            "notNull": true
++          },
++          {
++            "fieldPath": "company",
++            "columnName": "company",
++            "affinity": "TEXT",
++            "notNull": true
++          },
++          {
++            "fieldPath": "experience",
++            "columnName": "experience",
++            "affinity": "TEXT",
++            "notNull": true
++          },
++          {
++            "fieldPath": "publishedDate",
++            "columnName": "publishedDate",
++            "affinity": "TEXT",
++            "notNull": true
++          },
++          {
++            "fieldPath": "isFavorite",
++            "columnName": "isFavorite",
++            "affinity": "INTEGER",
++            "notNull": true
++          },
++          {
++            "fieldPath": "salary",
++            "columnName": "salary",
++            "affinity": "TEXT",
++            "notNull": true
++          },
++          {
++            "fieldPath": "schedules",
++            "columnName": "schedules",
++            "affinity": "TEXT",
++            "notNull": true
++          },
++          {
++            "fieldPath": "appliedNumber",
++            "columnName": "appliedNumber",
++            "affinity": "INTEGER",
++            "notNull": false
++          },
++          {
++            "fieldPath": "description",
++            "columnName": "description",
++            "affinity": "TEXT",
++            "notNull": true
++          },
++          {
++            "fieldPath": "responsibilities",
++            "columnName": "responsibilities",
++            "affinity": "TEXT",
++            "notNull": true
++          },
++          {
++            "fieldPath": "questions",
++            "columnName": "questions",
++            "affinity": "TEXT",
++            "notNull": true
++          }
++        ],
++        "primaryKey": {
++          "autoGenerate": false,
++          "columnNames": []
++        },
++        "indices": [],
++        "foreignKeys": []
++      }
++    ],
++    "views": [],
++    "setupQueries": [
++      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
++      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '6eaf8146c5c9198712ed577142f35c40')"
++    ]
++  }
++}
+\ No newline at end of file
+Index: app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml b/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml
+new file mode 100644
+--- /dev/null	(date 1725527774747)
++++ b/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml	(date 1725527774747)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="utf-8"?>
++<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
++    <background android:drawable="@drawable/ic_launcher_background" />
++    <foreground android:drawable="@drawable/ic_launcher_foreground" />
++    <monochrome android:drawable="@drawable/ic_launcher_foreground" />
++</adaptive-icon>
+\ No newline at end of file
+Index: app/src/main/res/values/themes.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/values/themes.xml b/app/src/main/res/values/themes.xml
+new file mode 100644
+--- /dev/null	(date 1725975903385)
++++ b/app/src/main/res/values/themes.xml	(date 1725975903385)
+@@ -0,0 +1,16 @@
++<resources xmlns:tools="http://schemas.android.com/tools">
++    <!-- Base application theme. -->
++    <style name="Theme.Hhreplica" parent="Theme.MaterialComponents.DayNight.NoActionBar">
++        <!-- Primary brand color. -->
++        <item name="colorPrimary">@color/black</item>
++        <item name="colorPrimaryVariant">@color/black</item>
++        <item name="colorOnPrimary">@color/white</item>
++        <!-- Secondary brand color. -->
++        <item name="colorSecondary">@color/teal_200</item>
++        <item name="colorSecondaryVariant">@color/teal_700</item>
++        <item name="colorOnSecondary">@color/black</item>
++        <!-- Status bar color. -->
++        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
++        <!-- Customize your theme here. -->
++    </style>
++</resources>
+\ No newline at end of file
+Index: app/src/main/java/com/lightcore/hhreplica/dataModels/Vacancy.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/lightcore/hhreplica/dataModels/Vacancy.kt b/app/src/main/java/com/lightcore/hhreplica/dataModels/Vacancy.kt
+new file mode 100644
+--- /dev/null	(date 1726013497152)
++++ b/app/src/main/java/com/lightcore/hhreplica/dataModels/Vacancy.kt	(date 1726013497152)
+@@ -0,0 +1,42 @@
++package com.lightcore.hhreplica.dataModels
++
++import androidx.room.ColumnInfo
++import androidx.room.Entity
++import androidx.room.PrimaryKey
++
++
++@Entity(tableName = "vacancy")
++data class Vacancy(
++    @PrimaryKey
++    val id: String,
++    @ColumnInfo(name = "lookingnumber") val lookingNumber: Int? = null,
++    @ColumnInfo(name = "title")val title: String,
++    @ColumnInfo(name = "address")val address: Address,
++    @ColumnInfo(name = "company")val company: String,
++    @ColumnInfo(name = "experience")val experience: Experience,
++    @ColumnInfo(name = "publisheddate")val publishedDate: String,
++    @ColumnInfo(name = "isfavorite") var isFavorite: Boolean,
++    @ColumnInfo(name = "salary")val salary: Salary,
++    @ColumnInfo(name = "schedule")val schedules: List<String>,
++    @ColumnInfo(name = "type")val type: String,
++    @ColumnInfo(name = "appliednumber")val appliedNumber: Int? = null,
++    @ColumnInfo(name = "description")val description: String,
++    @ColumnInfo(name = "responsibilities")val responsibilities: String,
++    @ColumnInfo(name = "questions")val questions: List<String>
++)
++
++data class Address(
++    val town: String,
++    val street: String,
++    val house: String
++)
++
++data class Experience(
++    val previewText: String,
++    val text: String
++)
++
++data class Salary(
++    val short: String? = null,
++    val full: String? = null
++)
+Index: app/src/main/res/values/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/values/strings.xml b/app/src/main/res/values/strings.xml
+new file mode 100644
+--- /dev/null	(date 1725999923650)
++++ b/app/src/main/res/values/strings.xml	(date 1725999923650)
+@@ -0,0 +1,11 @@
++<resources>
++    <string name="app_name">hhreplica</string>
++    <string name="title_home">Поиск</string>
++    <string name="title_dashboard">Избранные</string>
++    <string name="title_notifications">Отклики</string>
++    <string name="title_messages">Сообщения</string>
++    <string name="title_profile">Профиль</string>
++    <string name="looking_number">Сейчас просматривает</string>
++    <!-- TODO: Remove or change this placeholder text -->
++    <string name="hello_blank_fragment">Hello blank fragment</string>
++</resources>
+\ No newline at end of file
+Index: app/src/main/res/values/colors.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/values/colors.xml b/app/src/main/res/values/colors.xml
+new file mode 100644
+--- /dev/null	(date 1725532705467)
++++ b/app/src/main/res/values/colors.xml	(date 1725532705467)
+@@ -0,0 +1,12 @@
++<?xml version="1.0" encoding="utf-8"?>
++<resources>
++    <color name="purple_200">#FFBB86FC</color>
++    <color name="purple_500">#FF6200EE</color>
++    <color name="purple_700">#FF3700B3</color>
++    <color name="teal_200">#FF03DAC5</color>
++    <color name="teal_700">#FF018786</color>
++    <color name="black">#FF000000</color>
++    <color name="white">#FFFFFFFF</color>
++    <color name="gray12">#222325</color>
++    <color name="gray11">#303133</color>
++</resources>
+\ No newline at end of file
+Index: app/src/main/res/values-night/themes.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/values-night/themes.xml b/app/src/main/res/values-night/themes.xml
+new file mode 100644
+--- /dev/null	(date 1725976040988)
++++ b/app/src/main/res/values-night/themes.xml	(date 1725976040988)
+@@ -0,0 +1,16 @@
++<resources xmlns:tools="http://schemas.android.com/tools">
++    <!-- Base application theme. -->
++    <style name="Theme.Hhreplica" parent="Theme.MaterialComponents.DayNight.NoActionBar">
++        <!-- Primary brand color. -->
++        <item name="colorPrimary">@color/black</item>
++        <item name="colorPrimaryVariant">@color/black</item>
++        <item name="colorOnPrimary">@color/black</item>
++        <!-- Secondary brand color. -->
++        <item name="colorSecondary">@color/teal_200</item>
++        <item name="colorSecondaryVariant">@color/teal_200</item>
++        <item name="colorOnSecondary">@color/black</item>
++        <!-- Status bar color. -->
++        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
++        <!-- Customize your theme here. -->
++    </style>
++</resources>
+\ No newline at end of file
+Index: app/src/main/java/com/lightcore/hhreplica/adapters/OnItemClickListener.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/lightcore/hhreplica/adapters/OnItemClickListener.kt b/app/src/main/java/com/lightcore/hhreplica/adapters/OnItemClickListener.kt
+new file mode 100644
+--- /dev/null	(date 1725996785431)
++++ b/app/src/main/java/com/lightcore/hhreplica/adapters/OnItemClickListener.kt	(date 1725996785431)
+@@ -0,0 +1,7 @@
++package com.lightcore.hhreplica.adapters
++
++import com.lightcore.hhreplica.dataModels.Offers
++
++interface OnItemClickListener {
++    fun onItemClick(offer: Offers)
++}
+Index: app/src/main/java/com/lightcore/hhreplica/DB/VacancyDAO.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/lightcore/hhreplica/DB/VacancyDAO.kt b/app/src/main/java/com/lightcore/hhreplica/DB/VacancyDAO.kt
+new file mode 100644
+--- /dev/null	(date 1726013508481)
++++ b/app/src/main/java/com/lightcore/hhreplica/DB/VacancyDAO.kt	(date 1726013508481)
+@@ -0,0 +1,31 @@
++package com.lightcore.hhreplica.DB
++
++import androidx.room.Dao
++import androidx.room.Delete
++import androidx.room.Insert
++import androidx.room.OnConflictStrategy
++import androidx.room.Query
++import com.lightcore.hhreplica.dataModels.Vacancy
++
++@Dao
++interface VacancyDAO {
++    @Query("SELECT * FROM vacancy")
++    fun getAll(): List<Vacancy>
++
++    @Query("SELECT * FROM vacancy WHERE id IN (:vacancyIds)")
++    fun loadAllByIds(vacancyIds: IntArray): List<Vacancy>
++
++    @Query("SELECT * FROM vacancy WHERE title LIKE :name LIMIT 1")
++    fun findByName(name: String): Vacancy
++
++    @Insert(onConflict = OnConflictStrategy.REPLACE)
++    fun insertAll(vararg vacancies: Vacancy)
++
++    @Delete
++    fun delete(vacancy: Vacancy)
++
++    @Query("DELETE FROM vacancy")
++    fun deleteAll()
++
++
++}
+\ No newline at end of file
+Index: app/src/main/res/drawable/search_default.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/search_default.xml b/app/src/main/res/drawable/search_default.xml
+new file mode 100644
+--- /dev/null	(date 1725996208873)
++++ b/app/src/main/res/drawable/search_default.xml	(date 1725996208873)
+@@ -0,0 +1,12 @@
++<vector xmlns:android="http://schemas.android.com/apk/res/android"
++    android:width="24dp"
++    android:height="24dp"
++    android:viewportWidth="24"
++    android:viewportHeight="24">
++  <path
++      android:strokeWidth="1"
++      android:pathData="M16.692,16.8L20,20M11.429,7.429C13.322,7.429 14.857,8.964 14.857,10.857M18.933,11.467C18.933,15.59 15.59,18.933 11.467,18.933C7.343,18.933 4,15.59 4,11.467C4,7.343 7.343,4 11.467,4C15.59,4 18.933,7.343 18.933,11.467Z"
++      android:fillColor="#00000000"
++      android:strokeColor="#9F9F9F"
++      android:strokeLineCap="round"/>
++</vector>
+Index: app/src/main/java/com/lightcore/hhreplica/ui/home/fullVacancyes/full_vacancy.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/lightcore/hhreplica/ui/home/fullVacancyes/full_vacancy.kt b/app/src/main/java/com/lightcore/hhreplica/ui/home/fullVacancyes/full_vacancy.kt
+new file mode 100644
+--- /dev/null	(date 1726012875973)
++++ b/app/src/main/java/com/lightcore/hhreplica/ui/home/fullVacancyes/full_vacancy.kt	(date 1726012875973)
+@@ -0,0 +1,54 @@
++package com.lightcore.hhreplica.ui.home.fullVacancyes
++
++import android.os.Bundle
++import android.util.Log
++import androidx.fragment.app.Fragment
++import android.view.LayoutInflater
++import android.view.MotionEvent
++import android.view.View
++import android.view.ViewGroup
++import android.widget.EditText
++import android.widget.ImageButton
++import android.widget.ImageView
++import android.widget.TextView
++import androidx.lifecycle.ViewModelProvider
++import androidx.navigation.fragment.findNavController
++import androidx.recyclerview.widget.LinearLayoutManager
++import androidx.recyclerview.widget.RecyclerView
++import com.lightcore.hhreplica.R
++import com.lightcore.hhreplica.adapters.FullVacancyAdapter
++import com.lightcore.hhreplica.ui.home.HomeViewModel
++
++class FullVacancy : Fragment() {
++
++    override fun onCreateView(
++        inflater: LayoutInflater, container: ViewGroup?,
++        savedInstanceState: Bundle?
++    ): View? {
++        Log.d("FullVacancy", "onCreateView")
++
++        // Inflate the layout for this fragment
++        val view = inflater.inflate(R.layout.fragment_full_vacancy, container, false)
++
++        // Initialize ViewModel
++        val homeViewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
++        val backButton = view.findViewById<ImageButton>(R.id.imageButton)
++        backButton.setOnClickListener {
++            findNavController().navigateUp()
++        }
++        val text = view.findViewById<TextView>(R.id.textView2)
++        // Initialize RecyclerView
++        val vacancyView = view.findViewById<RecyclerView>(R.id.fullVacancyList)
++        vacancyView.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
++        context?.let { homeViewModel.getVacancy(requireContext()) }
++        // Observe ViewModel data and set adapter
++        homeViewModel.vacancy.observe(viewLifecycleOwner) { vacancy ->
++            Log.d("FullVacancy", "Data received: ${vacancy?.size} items")
++            val vacancyAdapter = context?.let { vacancy?.let { it1 -> FullVacancyAdapter(it, it1) } }
++            vacancyView.adapter = vacancyAdapter
++            text.text = (vacancy?.size.toString() + " вакансий")
++        }
++
++        return view
++    }
++}
+Index: app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml b/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml
+new file mode 100644
+--- /dev/null	(date 1725527774270)
++++ b/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml	(date 1725527774270)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="utf-8"?>
++<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
++    <background android:drawable="@drawable/ic_launcher_background" />
++    <foreground android:drawable="@drawable/ic_launcher_foreground" />
++    <monochrome android:drawable="@drawable/ic_launcher_foreground" />
++</adaptive-icon>
+\ No newline at end of file
+Index: app/src/main/res/layout/fragment_full_vacancy.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/fragment_full_vacancy.xml b/app/src/main/res/layout/fragment_full_vacancy.xml
+new file mode 100644
+--- /dev/null	(date 1726003999525)
++++ b/app/src/main/res/layout/fragment_full_vacancy.xml	(date 1726003999525)
+@@ -0,0 +1,88 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:id="@+id/frameLayout"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:background="#0C0C0C"
++    tools:context=".full_vacancy">
++
++    <ImageButton
++        android:id="@+id/imageButton"
++        android:layout_width="40dp"
++        android:layout_height="40dp"
++        android:layout_marginStart="16dp"
++        android:layout_marginTop="8dp"
++        android:background="@drawable/edit_style"
++        android:padding="4dp"
++        android:src="@drawable/icon_back"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent" />
++
++    <EditText
++        android:id="@+id/search_EditText_full"
++        android:layout_width="0dp"
++        android:layout_height="40dp"
++        android:layout_marginStart="8dp"
++        android:layout_marginTop="8dp"
++        android:layout_marginEnd="8dp"
++        android:background="@drawable/edit_style"
++        android:drawablePadding="8dp"
++        android:ems="10"
++        android:fontFamily="@font/sf_pro_regular"
++        android:hint="Должность по подходящим вакансиям"
++        android:inputType="text"
++        android:paddingStart="8dp"
++        android:textColorHint="#858688"
++        app:layout_constraintEnd_toStartOf="@+id/filters_full"
++        app:layout_constraintStart_toEndOf="@+id/imageButton"
++        app:layout_constraintTop_toTopOf="parent" />
++
++    <ImageButton
++        android:id="@+id/filters_full"
++        android:layout_width="40dp"
++        android:layout_height="40dp"
++        android:layout_marginTop="8dp"
++        android:layout_marginEnd="16dp"
++        android:background="@drawable/button_style"
++        android:src="@drawable/icon_filter"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintTop_toTopOf="parent" />
++
++    <TextView
++        android:id="@+id/textView2"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_marginStart="16dp"
++        android:layout_marginTop="16dp"
++        android:textColor="@color/white"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toBottomOf="@+id/search_EditText_full" />
++
++    <TextView
++        android:id="@+id/textView3"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_marginTop="16dp"
++        android:layout_marginEnd="16dp"
++        android:drawableEnd="@drawable/type_____________state_default"
++        android:text="По соответствию"
++        android:textColor="@color/purple_700"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintTop_toBottomOf="@+id/filters_full" />
++
++    <androidx.recyclerview.widget.RecyclerView
++        android:id="@+id/fullVacancyList"
++        android:layout_width="0dp"
++        android:layout_height="0dp"
++        android:layout_marginStart="16dp"
++        android:layout_marginEnd="16dp"
++        android:layout_marginBottom="58dp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toBottomOf="@+id/textView2">
++
++    </androidx.recyclerview.widget.RecyclerView>
++</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout/vacanci_item.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/vacanci_item.xml b/app/src/main/res/layout/vacanci_item.xml
+new file mode 100644
+--- /dev/null	(date 1725999923985)
++++ b/app/src/main/res/layout/vacanci_item.xml	(date 1725999923985)
+@@ -0,0 +1,146 @@
++<?xml version="1.0" encoding="utf-8"?>
++<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="wrap_content"
++    android:layout_gravity="start|top"
++    android:layout_marginTop="10dp"
++    android:background="@drawable/oitem_style"
++    android:gravity="start|top"
++    android:orientation="vertical"
++    android:padding="8dp">
++
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:gravity="top"
++        android:orientation="horizontal">
++
++        <LinearLayout
++            android:layout_width="250dp"
++            android:layout_height="wrap_content"
++            android:layout_marginStart="8dp"
++            android:layout_weight="1"
++            android:gravity="top"
++            android:orientation="vertical">
++
++            <TextView
++                android:id="@+id/looktxt"
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:layout_weight="1"
++                android:fontFamily="@font/sf_pro_regular"
++                android:maxLines="3"
++                android:singleLine="false"
++                android:textColor="#4CB24E"
++                android:textSize="16sp"
++                app:lineHeight="16.8sp" />
++
++            <TextView
++                android:id="@+id/vac_name"
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:layout_weight="1"
++                android:fontFamily="@font/sf_pro_medium"
++                android:maxLines="3"
++                android:paddingTop="6dp"
++                android:singleLine="false"
++                android:textSize="16sp"
++                app:lineHeight="19.2sp" />
++
++            <TextView
++                android:id="@+id/zp"
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:layout_weight="1"
++                android:fontFamily="@font/sf_pro_medium"
++                android:maxLines="3"
++                android:paddingTop="6dp"
++                android:singleLine="false"
++                android:textSize="20sp"
++                app:lineHeight="24sp" />
++
++            <TextView
++                android:id="@+id/city"
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:layout_weight="1"
++                android:fontFamily="@font/sf_pro_regular"
++                android:maxLines="3"
++                android:paddingTop="6dp"
++                android:singleLine="false"
++                app:lineHeight="16.8sp" />
++
++            <TextView
++                android:id="@+id/companyName"
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:layout_weight="1"
++                android:drawablePadding="8dp"
++                android:fontFamily="@font/sf_pro_regular"
++                android:maxLines="3"
++                android:singleLine="false"
++                app:drawableEndCompat="@drawable/icon__3_"
++                app:drawableTintMode="src_in"
++                app:lineHeight="16.8sp" />
++
++            <TextView
++                android:id="@+id/opit"
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:layout_weight="1"
++                android:drawablePadding="8dp"
++                android:fontFamily="@font/sf_pro_regular"
++                android:maxLines="3"
++                android:paddingTop="6dp"
++                android:singleLine="false"
++                android:textSize="14sp"
++                app:drawableStartCompat="@drawable/state_default"
++                app:lineHeight="16.8sp" />
++
++            <TextView
++                android:id="@+id/datePublish"
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:layout_weight="1"
++                android:fontFamily="@font/sf_pro_regular"
++                android:maxLines="3"
++                android:paddingTop="6dp"
++                android:singleLine="false"
++                android:textColor="#858688"
++                app:lineHeight="16.8sp" />
++
++        </LinearLayout>
++
++        <Space
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:layout_weight="1" />
++
++        <ImageButton
++            android:id="@+id/isFavoriteBtn"
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:layout_gravity="right|top"
++            android:backgroundTint="@android:color/transparent"
++            app:srcCompat="@drawable/icon_favorites_default" />
++
++    </LinearLayout>
++
++    <Space
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_weight="1" />
++
++    <Button
++        android:id="@+id/OtklickBtn"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_marginStart="8dp"
++        android:layout_marginEnd="8dp"
++        android:backgroundTint="#4CB24E"
++        android:text="Откликнуться"
++        android:textColor="@color/white"
++        app:cornerRadius="50dp" />
++</LinearLayout>
+Index: app/src/main/res/drawable/ic_launcher_foreground.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/ic_launcher_foreground.xml b/app/src/main/res/drawable/ic_launcher_foreground.xml
+new file mode 100644
+--- /dev/null	(date 1725527774731)
++++ b/app/src/main/res/drawable/ic_launcher_foreground.xml	(date 1725527774731)
+@@ -0,0 +1,30 @@
++<vector xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:aapt="http://schemas.android.com/aapt"
++    android:width="108dp"
++    android:height="108dp"
++    android:viewportWidth="108"
++    android:viewportHeight="108">
++    <path android:pathData="M31,63.928c0,0 6.4,-11 12.1,-13.1c7.2,-2.6 26,-1.4 26,-1.4l38.1,38.1L107,108.928l-32,-1L31,63.928z">
++        <aapt:attr name="android:fillColor">
++            <gradient
++                android:endX="85.84757"
++                android:endY="92.4963"
++                android:startX="42.9492"
++                android:startY="49.59793"
++                android:type="linear">
++                <item
++                    android:color="#44000000"
++                    android:offset="0.0" />
++                <item
++                    android:color="#00000000"
++                    android:offset="1.0" />
++            </gradient>
++        </aapt:attr>
++    </path>
++    <path
++        android:fillColor="#FFFFFF"
++        android:fillType="nonZero"
++        android:pathData="M65.3,45.828l3.8,-6.6c0.2,-0.4 0.1,-0.9 -0.3,-1.1c-0.4,-0.2 -0.9,-0.1 -1.1,0.3l-3.9,6.7c-6.3,-2.8 -13.4,-2.8 -19.7,0l-3.9,-6.7c-0.2,-0.4 -0.7,-0.5 -1.1,-0.3C38.8,38.328 38.7,38.828 38.9,39.228l3.8,6.6C36.2,49.428 31.7,56.028 31,63.928h46C76.3,56.028 71.8,49.428 65.3,45.828zM43.4,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2c-0.3,-0.7 -0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C45.3,56.528 44.5,57.328 43.4,57.328L43.4,57.328zM64.6,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2s-0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C66.5,56.528 65.6,57.328 64.6,57.328L64.6,57.328z"
++        android:strokeWidth="1"
++        android:strokeColor="#00000000" />
++</vector>
+\ No newline at end of file
+Index: app/src/main/res/drawable/ic_launcher_background.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/ic_launcher_background.xml b/app/src/main/res/drawable/ic_launcher_background.xml
+new file mode 100644
+--- /dev/null	(date 1725527774701)
++++ b/app/src/main/res/drawable/ic_launcher_background.xml	(date 1725527774701)
+@@ -0,0 +1,170 @@
++<?xml version="1.0" encoding="utf-8"?>
++<vector xmlns:android="http://schemas.android.com/apk/res/android"
++    android:width="108dp"
++    android:height="108dp"
++    android:viewportWidth="108"
++    android:viewportHeight="108">
++    <path
++        android:fillColor="#3DDC84"
++        android:pathData="M0,0h108v108h-108z" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M9,0L9,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M19,0L19,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M29,0L29,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M39,0L39,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M49,0L49,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M59,0L59,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M69,0L69,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M79,0L79,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M89,0L89,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M99,0L99,108"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,9L108,9"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,19L108,19"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,29L108,29"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,39L108,39"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,49L108,49"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,59L108,59"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,69L108,69"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,79L108,79"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,89L108,89"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M0,99L108,99"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M19,29L89,29"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M19,39L89,39"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M19,49L89,49"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M19,59L89,59"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M19,69L89,69"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M19,79L89,79"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M29,19L29,89"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M39,19L39,89"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M49,19L49,89"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M59,19L59,89"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M69,19L69,89"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++    <path
++        android:fillColor="#00000000"
++        android:pathData="M79,19L79,89"
++        android:strokeWidth="0.8"
++        android:strokeColor="#33FFFFFF" />
++</vector>
+Index: app/src/main/res/layout/fragment_dashboard.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/fragment_dashboard.xml b/app/src/main/res/layout/fragment_dashboard.xml
+new file mode 100644
+--- /dev/null	(date 1725966332824)
++++ b/app/src/main/res/layout/fragment_dashboard.xml	(date 1725966332824)
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".ui.dashboard.DashboardFragment"/>
+\ No newline at end of file
+Index: app/src/main/java/com/lightcore/hhreplica/ui/dashboard/DashboardViewModel.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/lightcore/hhreplica/ui/dashboard/DashboardViewModel.kt b/app/src/main/java/com/lightcore/hhreplica/ui/dashboard/DashboardViewModel.kt
+new file mode 100644
+--- /dev/null	(date 1725527775184)
++++ b/app/src/main/java/com/lightcore/hhreplica/ui/dashboard/DashboardViewModel.kt	(date 1725527775184)
+@@ -0,0 +1,13 @@
++package com.lightcore.hhreplica.ui.dashboard
++
++import androidx.lifecycle.LiveData
++import androidx.lifecycle.MutableLiveData
++import androidx.lifecycle.ViewModel
++
++class DashboardViewModel : ViewModel() {
++
++    private val _text = MutableLiveData<String>().apply {
++        value = "This is dashboard Fragment"
++    }
++    val text: LiveData<String> = _text
++}
+\ No newline at end of file
+Index: app/src/main/java/com/lightcore/hhreplica/ui/dashboard/DashboardFragment.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/lightcore/hhreplica/ui/dashboard/DashboardFragment.kt b/app/src/main/java/com/lightcore/hhreplica/ui/dashboard/DashboardFragment.kt
+new file mode 100644
+--- /dev/null	(date 1725967539721)
++++ b/app/src/main/java/com/lightcore/hhreplica/ui/dashboard/DashboardFragment.kt	(date 1725967539721)
+@@ -0,0 +1,42 @@
++package com.lightcore.hhreplica.ui.dashboard
++
++import android.os.Bundle
++import android.view.LayoutInflater
++import android.view.View
++import android.view.ViewGroup
++import android.widget.TextView
++import androidx.fragment.app.Fragment
++import androidx.lifecycle.ViewModelProvider
++import com.lightcore.hhreplica.databinding.FragmentDashboardBinding
++
++class DashboardFragment : Fragment() {
++
++    private var _binding: FragmentDashboardBinding? = null
++
++    // This property is only valid between onCreateView and
++    // onDestroyView.
++    private val binding get() = _binding!!
++
++    override fun onCreateView(
++        inflater: LayoutInflater,
++        container: ViewGroup?,
++        savedInstanceState: Bundle?
++    ): View {
++        val dashboardViewModel =
++            ViewModelProvider(this).get(DashboardViewModel::class.java)
++
++        _binding = FragmentDashboardBinding.inflate(inflater, container, false)
++        val root: View = binding.root
++
++
++        dashboardViewModel.text.observe(viewLifecycleOwner) {
++
++        }
++        return root
++    }
++
++    override fun onDestroyView() {
++        super.onDestroyView()
++        _binding = null
++    }
++}
+\ No newline at end of file
+Index: app/src/main/res/layout/fragment_notifications.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/fragment_notifications.xml b/app/src/main/res/layout/fragment_notifications.xml
+new file mode 100644
+--- /dev/null	(date 1725966332814)
++++ b/app/src/main/res/layout/fragment_notifications.xml	(date 1725966332814)
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".ui.notifications.NotificationsFragment"/>
+\ No newline at end of file
+Index: app/src/main/java/com/lightcore/hhreplica/ui/notifications/NotificationsViewModel.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/lightcore/hhreplica/ui/notifications/NotificationsViewModel.kt b/app/src/main/java/com/lightcore/hhreplica/ui/notifications/NotificationsViewModel.kt
+new file mode 100644
+--- /dev/null	(date 1725527775212)
++++ b/app/src/main/java/com/lightcore/hhreplica/ui/notifications/NotificationsViewModel.kt	(date 1725527775212)
+@@ -0,0 +1,13 @@
++package com.lightcore.hhreplica.ui.notifications
++
++import androidx.lifecycle.LiveData
++import androidx.lifecycle.MutableLiveData
++import androidx.lifecycle.ViewModel
++
++class NotificationsViewModel : ViewModel() {
++
++    private val _text = MutableLiveData<String>().apply {
++        value = "This is notifications Fragment"
++    }
++    val text: LiveData<String> = _text
++}
+\ No newline at end of file
+Index: app/src/main/res/drawable/icon_filter.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/icon_filter.xml b/app/src/main/res/drawable/icon_filter.xml
+new file mode 100644
+--- /dev/null	(date 1725966897728)
++++ b/app/src/main/res/drawable/icon_filter.xml	(date 1725966897728)
+@@ -0,0 +1,18 @@
++<vector xmlns:android="http://schemas.android.com/apk/res/android"
++    android:width="24dp"
++    android:height="24dp"
++    android:viewportWidth="24"
++    android:viewportHeight="24">
++  <path
++      android:pathData="M10.695,7.526C10.5,8.487 9.65,9.211 8.632,9.211C7.613,9.211 6.763,8.487 6.568,7.526H4.421C4.189,7.526 4,7.338 4,7.105C4,6.873 4.189,6.684 4.421,6.684H6.568C6.763,5.723 7.613,5 8.632,5C9.65,5 10.5,5.723 10.695,6.684H19.579C19.812,6.684 20,6.873 20,7.105C20,7.338 19.812,7.526 19.579,7.526H10.695ZM9.895,7.105C9.895,7.803 9.329,8.368 8.632,8.368C7.934,8.368 7.368,7.803 7.368,7.105C7.368,6.408 7.934,5.842 8.632,5.842C9.329,5.842 9.895,6.408 9.895,7.105Z"
++      android:fillColor="#ffffff"
++      android:fillType="evenOdd"/>
++  <path
++      android:pathData="M17.432,12.579C17.236,13.54 16.387,14.263 15.368,14.263C14.35,14.263 13.5,13.54 13.305,12.579H4.421C4.189,12.579 4,12.39 4,12.158C4,11.925 4.189,11.737 4.421,11.737H13.305C13.5,10.776 14.35,10.053 15.368,10.053C16.387,10.053 17.236,10.776 17.432,11.737H19.579C19.812,11.737 20,11.925 20,12.158C20,12.39 19.812,12.579 19.579,12.579H17.432ZM16.632,12.158C16.632,12.856 16.066,13.421 15.368,13.421C14.671,13.421 14.105,12.856 14.105,12.158C14.105,11.46 14.671,10.895 15.368,10.895C16.066,10.895 16.632,11.46 16.632,12.158Z"
++      android:fillColor="#ffffff"
++      android:fillType="evenOdd"/>
++  <path
++      android:pathData="M8.632,19.316C9.65,19.316 10.5,18.593 10.695,17.632H19.579C19.812,17.632 20,17.443 20,17.211C20,16.978 19.812,16.789 19.579,16.789H10.695C10.5,15.828 9.65,15.105 8.632,15.105C7.613,15.105 6.763,15.828 6.568,16.789H4.421C4.189,16.789 4,16.978 4,17.211C4,17.443 4.189,17.632 4.421,17.632H6.568C6.763,18.593 7.613,19.316 8.632,19.316ZM8.632,18.474C9.329,18.474 9.895,17.908 9.895,17.211C9.895,16.513 9.329,15.947 8.632,15.947C7.934,15.947 7.368,16.513 7.368,17.211C7.368,17.908 7.934,18.474 8.632,18.474Z"
++      android:fillColor="#ffffff"
++      android:fillType="evenOdd"/>
++</vector>
+Index: app/src/main/java/com/lightcore/hhreplica/ui/notifications/NotificationsFragment.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/lightcore/hhreplica/ui/notifications/NotificationsFragment.kt b/app/src/main/java/com/lightcore/hhreplica/ui/notifications/NotificationsFragment.kt
+new file mode 100644
+--- /dev/null	(date 1725967598894)
++++ b/app/src/main/java/com/lightcore/hhreplica/ui/notifications/NotificationsFragment.kt	(date 1725967598894)
+@@ -0,0 +1,41 @@
++package com.lightcore.hhreplica.ui.notifications
++
++import android.os.Bundle
++import android.view.LayoutInflater
++import android.view.View
++import android.view.ViewGroup
++import android.widget.TextView
++import androidx.fragment.app.Fragment
++import androidx.lifecycle.ViewModelProvider
++import com.lightcore.hhreplica.databinding.FragmentNotificationsBinding
++
++class NotificationsFragment : Fragment() {
++
++    private var _binding: FragmentNotificationsBinding? = null
++
++    // This property is only valid between onCreateView and
++    // onDestroyView.
++    private val binding get() = _binding!!
++
++    override fun onCreateView(
++        inflater: LayoutInflater,
++        container: ViewGroup?,
++        savedInstanceState: Bundle?
++    ): View {
++        val notificationsViewModel =
++            ViewModelProvider(this).get(NotificationsViewModel::class.java)
++
++        _binding = FragmentNotificationsBinding.inflate(inflater, container, false)
++        val root: View = binding.root
++
++        notificationsViewModel.text.observe(viewLifecycleOwner) {
++
++        }
++        return root
++    }
++
++    override fun onDestroyView() {
++        super.onDestroyView()
++        _binding = null
++    }
++}
+\ No newline at end of file
+Index: app/src/main/java/com/lightcore/hhreplica/adapters/VacancyAdapter.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/lightcore/hhreplica/adapters/VacancyAdapter.kt b/app/src/main/java/com/lightcore/hhreplica/adapters/VacancyAdapter.kt
+new file mode 100644
+--- /dev/null	(date 1726013399799)
++++ b/app/src/main/java/com/lightcore/hhreplica/adapters/VacancyAdapter.kt	(date 1726013399799)
+@@ -0,0 +1,101 @@
++import android.content.Context
++import android.view.LayoutInflater
++import android.view.View
++import android.view.ViewGroup
++import android.widget.Button
++import android.widget.ImageButton
++import android.widget.TextView
++import androidx.core.content.ContextCompat
++import androidx.fragment.app.FragmentActivity
++import androidx.lifecycle.ViewModelProvider
++import androidx.recyclerview.widget.RecyclerView
++import com.lightcore.hhreplica.DB.AppDB
++import com.lightcore.hhreplica.R
++import com.lightcore.hhreplica.dataModels.Vacancy
++import com.lightcore.hhreplica.ui.home.HomeViewModel
++import kotlinx.coroutines.CoroutineScope
++import kotlinx.coroutines.Dispatchers
++import kotlinx.coroutines.launch
++import kotlinx.coroutines.withContext
++
++class VacancyAdapter(
++    private val context: Context,
++    private val vacancies: List<Vacancy>,
++) : RecyclerView.Adapter<VacancyAdapter.VacancyViewHolder>() {
++
++    private val limitedVacancies = if (vacancies.size > 3) vacancies.take(3) else vacancies
++
++    inner class VacancyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
++        val lookingNumber: TextView = itemView.findViewById(R.id.looktxt)
++        val title: TextView = itemView.findViewById(R.id.vac_name)
++        val salary: TextView = itemView.findViewById(R.id.zp)
++        val city: TextView = itemView.findViewById(R.id.city)
++        val companyName: TextView = itemView.findViewById(R.id.companyName)
++        val experience: TextView = itemView.findViewById(R.id.opit)
++        val datePublished: TextView = itemView.findViewById(R.id.datePublish)
++        val button: Button = itemView.findViewById(R.id.OtklickBtn)
++        val favbtn: ImageButton = itemView.findViewById(R.id.isFavoriteBtn)
++
++        init {
++            button.setOnClickListener {
++//                onButtonClick(vacancies[adapterPosition])
++            }
++            favbtn.setOnClickListener {
++                val vacancy = limitedVacancies[adapterPosition]
++
++                // Обновляем состояние через ViewModel
++                val homeViewModel = ViewModelProvider(context as FragmentActivity).get(HomeViewModel::class.java)
++                homeViewModel.toggleFavorite(vacancy, context)
++                notifyDataSetChanged()
++                notifyItemChanged(adapterPosition) // Обновляем элемент в списке
++            }
++
++
++        }
++    }
++
++    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VacancyViewHolder {
++        val view = LayoutInflater.from(context).inflate(R.layout.vacanci_item, parent, false)
++        return VacancyViewHolder(view)
++    }
++
++    override fun onBindViewHolder(holder: VacancyViewHolder, position: Int) {
++        val vacancy = limitedVacancies[position]
++        holder.lookingNumber.text = vacancy.lookingNumber?.let { getHumanReadableViewersCount(it) }
++        holder.title.text = vacancy.title
++        holder.salary.text = vacancy.salary.short ?: ""
++        holder.salary.visibility = if (vacancy.salary.short != null) View.VISIBLE else View.GONE
++        holder.city.text = vacancy.address.town
++        holder.companyName.text = vacancy.company
++        holder.experience.text = vacancy.experience.previewText
++        holder.datePublished.text = vacancy.publishedDate?.let { getCurrentDate(it) }
++        if (vacancy.isFavorite) {
++            holder.favbtn.setImageDrawable(ContextCompat.getDrawable(context, R.drawable.favorite_active_icon))
++        } else {
++            holder.favbtn.setImageDrawable(ContextCompat.getDrawable(context, R.drawable.icon_favorites_default))
++        }
++    }
++
++    override fun getItemCount(): Int {
++        return limitedVacancies.size
++    }
++}
++
++fun getHumanReadableViewersCount(lookingNumber: Int): String {
++    val suffix = when {
++        lookingNumber % 100 in 11..14 -> "человек"
++        lookingNumber % 10 == 1 -> "человек"
++        lookingNumber % 10 in 2..4 -> "человека"
++        else -> "человек"
++    }
++    return "Сейчас просматривает $lookingNumber $suffix"
++}
++
++fun getCurrentDate(string: String): String{
++    val date = string.split("-")
++    val month = date[1].toInt()
++    val months = arrayOf("января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря")
++    val result = "Опубликовано ${date[2]} ${months[month-1]}"
++    return result
++}
++
+Index: app/src/main/res/xml/data_extraction_rules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/xml/data_extraction_rules.xml b/app/src/main/res/xml/data_extraction_rules.xml
+new file mode 100644
+--- /dev/null	(date 1725527774992)
++++ b/app/src/main/res/xml/data_extraction_rules.xml	(date 1725527774992)
+@@ -0,0 +1,19 @@
++<?xml version="1.0" encoding="utf-8"?><!--
++   Sample data extraction rules file; uncomment and customize as necessary.
++   See https://developer.android.com/about/versions/12/backup-restore#xml-changes
++   for details.
++-->
++<data-extraction-rules>
++    <cloud-backup>
++        <!-- TODO: Use <include> and <exclude> to control what is backed up.
++        <include .../>
++        <exclude .../>
++        -->
++    </cloud-backup>
++    <!--
++    <device-transfer>
++        <include .../>
++        <exclude .../>
++    </device-transfer>
++    -->
++</data-extraction-rules>
+\ No newline at end of file
+Index: app/src/main/res/xml/backup_rules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/xml/backup_rules.xml b/app/src/main/res/xml/backup_rules.xml
+new file mode 100644
+--- /dev/null	(date 1725527774980)
++++ b/app/src/main/res/xml/backup_rules.xml	(date 1725527774980)
+@@ -0,0 +1,13 @@
++<?xml version="1.0" encoding="utf-8"?><!--
++   Sample backup rules file; uncomment and customize as necessary.
++   See https://developer.android.com/guide/topics/data/autobackup
++   for details.
++   Note: This file is ignored for devices older that API 31
++   See https://developer.android.com/about/versions/12/backup-restore
++-->
++<full-backup-content>
++    <!--
++   <include domain="sharedpref" path="."/>
++   <exclude domain="sharedpref" path="device.xml"/>
++-->
++</full-backup-content>
+\ No newline at end of file
+Index: app/src/main/res/layout/fragment_home.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/fragment_home.xml b/app/src/main/res/layout/fragment_home.xml
+new file mode 100644
+--- /dev/null	(date 1726003154914)
++++ b/app/src/main/res/layout/fragment_home.xml	(date 1726003154914)
+@@ -0,0 +1,90 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:background="#0C0C0C"
++    tools:context=".ui.home.HomeFragment">
++
++    <EditText
++        android:id="@+id/search_EditText"
++        android:layout_width="0dp"
++        android:layout_height="40dp"
++        android:layout_marginStart="16dp"
++        android:layout_marginTop="8dp"
++        android:layout_marginEnd="8dp"
++        android:background="@drawable/edit_style"
++        android:drawableStart="@drawable/search_default"
++        android:drawablePadding="8dp"
++        android:ems="10"
++        android:fontFamily="@font/sf_pro_regular"
++        android:hint="Должность, ключевые слова"
++        android:inputType="text"
++        android:paddingStart="8dp"
++        android:textColorHint="#858688"
++        app:layout_constraintEnd_toStartOf="@+id/filters"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent" />
++
++    <ImageButton
++        android:id="@+id/filters"
++        android:layout_width="40dp"
++        android:layout_height="40dp"
++        android:layout_marginTop="8dp"
++        android:layout_marginEnd="16dp"
++        android:background="@drawable/button_style"
++        android:src="@drawable/icon_filter"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintTop_toTopOf="parent" />
++
++    <androidx.recyclerview.widget.RecyclerView
++        android:id="@+id/offers_likst"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_marginStart="12dp"
++        android:layout_marginTop="16dp"
++        android:orientation="horizontal"
++        android:scrollbars="horizontal"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toBottomOf="@+id/search_EditText" />
++
++    <TextView
++        android:id="@+id/textView"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_marginStart="16dp"
++        android:layout_marginTop="32dp"
++        android:text="Вакансии для вас"
++        android:textColor="@color/white"
++        android:textSize="20dp"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toBottomOf="@+id/offers_likst" />
++
++    <androidx.recyclerview.widget.RecyclerView
++        android:id="@+id/vacansies_list"
++        android:layout_width="0dp"
++        android:layout_height="0dp"
++        android:layout_marginStart="16dp"
++        android:layout_marginTop="16dp"
++        android:layout_marginEnd="16dp"
++        android:layout_marginBottom="8dp"
++        app:layout_constraintBottom_toTopOf="@+id/more"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toBottomOf="@+id/textView" />
++
++    <Button
++        android:id="@+id/more"
++        android:layout_width="0dp"
++        android:layout_height="48dp"
++        android:layout_marginStart="16dp"
++        android:layout_marginEnd="16dp"
++        android:layout_marginBottom="62dp"
++        android:backgroundTint="#2B7EFE"
++        android:text="Еще"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent" />
++</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/res/drawable/otklik_style.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/otklik_style.xml b/app/src/main/res/drawable/otklik_style.xml
+new file mode 100644
+--- /dev/null	(date 1725987572076)
++++ b/app/src/main/res/drawable/otklik_style.xml	(date 1725987572076)
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="utf-8"?>
++<shape xmlns:android="http://schemas.android.com/apk/res/android">
++    <!-- Цвет фона кнопки -->
++    <solid android:color="#4CB24E" />
++
++    <!-- Закругленные углы -->
++    <corners android:radius="50dp" />
++
++</shape>
+\ No newline at end of file
+Index: app/src/main/java/com/lightcore/hhreplica/ui/home/HomeViewModel.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/lightcore/hhreplica/ui/home/HomeViewModel.kt b/app/src/main/java/com/lightcore/hhreplica/ui/home/HomeViewModel.kt
+new file mode 100644
+--- /dev/null	(date 1726013764833)
++++ b/app/src/main/java/com/lightcore/hhreplica/ui/home/HomeViewModel.kt	(date 1726013764833)
+@@ -0,0 +1,69 @@
++package com.lightcore.hhreplica.ui.home
++
++import android.content.Context
++import androidx.lifecycle.LiveData
++import androidx.lifecycle.MutableLiveData
++import androidx.lifecycle.ViewModel
++import com.lightcore.hhreplica.DB.AppDB
++import com.lightcore.hhreplica.Main
++import com.lightcore.hhreplica.dataModels.Offers
++import com.lightcore.hhreplica.dataModels.Vacancy
++import kotlinx.coroutines.CoroutineScope
++import kotlinx.coroutines.Dispatchers
++import kotlinx.coroutines.launch
++
++class HomeViewModel : ViewModel() {
++    // Используем MutableLiveData для обновления данных
++    private val _offers = MutableLiveData<List<Offers>>()
++    private val _vacancyes = MutableLiveData<List<Vacancy>?>()
++
++    // Публичное свойство для получения данных через LiveData
++    val offers: LiveData<List<Offers>> = _offers
++    val vacancy: MutableLiveData<List<Vacancy>?> = _vacancyes
++
++    // Метод для загрузки офферов
++    fun getOffers(context: Context) {
++        val main = Main()
++        val offersList = main.getOffers(context)
++
++        // Устанавливаем данные в MutableLiveData
++        _offers.value = offersList
++    }
++    fun getVacancy(context: Context) {
++        val main = Main()
++        val vacancyList = main.getVacancyList(context)
++        val appDB = AppDB.getDatabase(context)
++
++        // Получаем сохранённые вакансии
++        CoroutineScope(Dispatchers.IO).launch {
++            val savedVacancies = appDB.vacancyDao().getAll()
++            vacancyList.forEach { vacancy ->
++                // Сравниваем по ID и обновляем статус избранного
++                if (savedVacancies.any { it.id == vacancy.id }) {
++                    vacancy.isFavorite = true
++                }
++            }
++            _vacancyes.postValue(vacancyList) // Обновляем список вакансий
++        }
++    }
++    fun toggleFavorite(vacancy: Vacancy, context: Context) {
++        val db = AppDB.getDatabase(context)
++        CoroutineScope(Dispatchers.IO).launch {
++            if (vacancy.isFavorite) {
++                db.vacancyDao().delete(vacancy)
++            } else {
++                db.vacancyDao().insertAll(vacancy)
++            }
++
++            // Обновляем состояние вакансии
++            val updatedVacancies = _vacancyes.value?.map {
++                if (it.id == vacancy.id) {
++                    it.copy(isFavorite = !vacancy.isFavorite)
++                } else it
++            }
++
++            _vacancyes.postValue(updatedVacancies)  // Обновляем данные через LiveData
++        }
++    }
++
++}
+\ No newline at end of file
+Index: app/src/main/java/com/lightcore/hhreplica/ui/home/HomeFragment.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/lightcore/hhreplica/ui/home/HomeFragment.kt b/app/src/main/java/com/lightcore/hhreplica/ui/home/HomeFragment.kt
+new file mode 100644
+--- /dev/null	(date 1726013615668)
++++ b/app/src/main/java/com/lightcore/hhreplica/ui/home/HomeFragment.kt	(date 1726013615668)
+@@ -0,0 +1,76 @@
++package com.lightcore.hhreplica.ui.home
++
++import OffersRecAdapter
++import VacancyAdapter
++import android.content.Intent
++import android.net.Uri
++import android.os.Bundle
++import android.util.Log
++import android.view.LayoutInflater
++import android.view.View
++import android.view.ViewGroup
++import android.widget.Button
++import androidx.fragment.app.Fragment
++import androidx.lifecycle.ViewModelProvider
++import androidx.navigation.fragment.findNavController
++import androidx.recyclerview.widget.LinearLayoutManager
++import androidx.recyclerview.widget.RecyclerView
++import com.lightcore.hhreplica.DB.VacancyDAO
++import com.lightcore.hhreplica.R
++import com.lightcore.hhreplica.adapters.OnItemClickListener
++import com.lightcore.hhreplica.dataModels.Offers
++import com.lightcore.hhreplica.databinding.FragmentHomeBinding
++
++
++class HomeFragment : Fragment(), OnItemClickListener {
++
++    private var _binding: FragmentHomeBinding? = null
++
++    // This property is only valid between onCreateView and
++    // onDestroyView.
++    private val binding get() = _binding!!
++
++    override fun onCreateView(
++        inflater: LayoutInflater,
++        container: ViewGroup?,
++        savedInstanceState: Bundle?
++    ): View {
++        val homeViewModel =
++            ViewModelProvider(this).get(HomeViewModel::class.java)
++
++        _binding = FragmentHomeBinding.inflate(inflater, container, false)
++        val root: View = binding.root
++        val moreBtn = root.findViewById<Button>(R.id.more)
++        val recyclerView = root.findViewById<RecyclerView>(R.id.offers_likst)
++        recyclerView.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
++        context?.let { homeViewModel.getOffers(it) }
++        context?.let { homeViewModel.getVacancy(it) }
++        val vacancyView = root.findViewById<RecyclerView>(R.id.vacansies_list)
++        vacancyView.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
++        homeViewModel.vacancy.observe(viewLifecycleOwner){vacancy ->
++            val vacancyAdapter = vacancy?.let { VacancyAdapter(requireContext(), it) }
++            vacancyView.adapter = vacancyAdapter
++            vacancyAdapter?.notifyDataSetChanged()
++            moreBtn.text = "Еще ${vacancy?.size} вакансий"
++        }
++        moreBtn.setOnClickListener {
++            Log.d("HomeFragment", "More button clicked")
++            findNavController().navigate(R.id.action_navigation_home_to_fullVacancyList)
++        }
++        homeViewModel.offers.observe(viewLifecycleOwner) { offers ->
++            val offersAdapter = context?.let { OffersRecAdapter(offers, it, this) }
++            recyclerView.adapter = offersAdapter
++        }
++        return root
++    }
++
++    override fun onDestroyView() {
++        super.onDestroyView()
++        _binding = null
++    }
++
++    override fun onItemClick(offer: Offers) {
++        val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(offer.link))
++        startActivity(browserIntent)
++    }
++}
+\ No newline at end of file
+Index: app/src/main/res/font/sue_ellen_francisco.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/font/sue_ellen_francisco.xml b/app/src/main/res/font/sue_ellen_francisco.xml
+new file mode 100644
+--- /dev/null	(date 1725988546410)
++++ b/app/src/main/res/font/sue_ellen_francisco.xml	(date 1725988546410)
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="utf-8"?>
++<font-family xmlns:app="http://schemas.android.com/apk/res-auto"
++        app:fontProviderAuthority="com.google.android.gms.fonts"
++        app:fontProviderPackage="com.google.android.gms"
++        app:fontProviderQuery="Sue Ellen Francisco"
++        app:fontProviderCerts="@array/com_google_android_gms_fonts_certs">
++</font-family>
+Index: app/src/main/java/com/lightcore/hhreplica/ui/home/fullVacancyes/FullVacancyVM.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/lightcore/hhreplica/ui/home/fullVacancyes/FullVacancyVM.kt b/app/src/main/java/com/lightcore/hhreplica/ui/home/fullVacancyes/FullVacancyVM.kt
+new file mode 100644
+--- /dev/null	(date 1726002106608)
++++ b/app/src/main/java/com/lightcore/hhreplica/ui/home/fullVacancyes/FullVacancyVM.kt	(date 1726002106608)
+@@ -0,0 +1,20 @@
++package com.lightcore.hhreplica.ui.home.fullVacancyes
++
++import android.content.Context
++import androidx.lifecycle.LiveData
++import androidx.lifecycle.MutableLiveData
++import androidx.lifecycle.ViewModel
++import com.lightcore.hhreplica.Main
++import com.lightcore.hhreplica.dataModels.Vacancy
++
++class FullVacancyVM : ViewModel() {
++    private val _vacancy = MutableLiveData<List<Vacancy>>()
++    val vacancy: LiveData<List<Vacancy>> get() = _vacancy
++
++    fun loadVacancies(context: Context) {
++        val main = Main()
++        val vacancyList = main.getVacancyList(context)
++
++        _vacancy.value = vacancyList
++    }
++}
+Index: app/src/main/res/menu/bottom_nav_menu.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/menu/bottom_nav_menu.xml b/app/src/main/res/menu/bottom_nav_menu.xml
+new file mode 100644
+--- /dev/null	(date 1725639719183)
++++ b/app/src/main/res/menu/bottom_nav_menu.xml	(date 1725639719183)
+@@ -0,0 +1,29 @@
++<?xml version="1.0" encoding="utf-8"?>
++<menu xmlns:android="http://schemas.android.com/apk/res/android">
++
++    <item
++        android:id="@+id/navigation_home"
++        android:icon="@drawable/icon_search"
++        android:title="@string/title_home" />
++
++    <item
++        android:id="@+id/navigation_dashboard"
++        android:icon="@drawable/icon_favorites_default"
++        android:title="@string/title_dashboard" />
++
++    <item
++        android:id="@+id/navigation_notifications"
++        android:icon="@drawable/icon_responses"
++        android:title="@string/title_notifications" />
++
++    <item
++        android:id="@+id/messages"
++        android:icon="@drawable/icon_responses"
++        android:title="@string/title_messages" />
++
++    <item
++        android:id="@+id/profile"
++        android:icon="@drawable/icon_responses"
++        android:title="@string/title_profile"
++        />
++</menu>
+\ No newline at end of file
+Index: app/src/main/res/values/preloaded_fonts.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/values/preloaded_fonts.xml b/app/src/main/res/values/preloaded_fonts.xml
+new file mode 100644
+--- /dev/null	(date 1725988573562)
++++ b/app/src/main/res/values/preloaded_fonts.xml	(date 1725988573562)
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="utf-8"?>
++<resources>
++    <array name="preloaded_fonts" translatable="false">
++        <item>@font/roboto_thin</item>
++        <item>@font/sue_ellen_francisco</item>
++    </array>
++</resources>
+Index: app/src/main/res/drawable/icon_back.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/icon_back.xml b/app/src/main/res/drawable/icon_back.xml
+new file mode 100644
+--- /dev/null	(date 1726002327920)
++++ b/app/src/main/res/drawable/icon_back.xml	(date 1726002327920)
+@@ -0,0 +1,13 @@
++<vector xmlns:android="http://schemas.android.com/apk/res/android"
++    android:width="16dp"
++    android:height="14dp"
++    android:viewportWidth="16"
++    android:viewportHeight="14">
++  <path
++      android:pathData="M6.833,13L1,7M1,7L6.833,1M1,7H15"
++      android:strokeLineJoin="round"
++      android:strokeWidth="2"
++      android:fillColor="#00000000"
++      android:strokeColor="#ffffff"
++      android:strokeLineCap="round"/>
++</vector>
+Index: app/src/main/res/values/font_certs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/values/font_certs.xml b/app/src/main/res/values/font_certs.xml
+new file mode 100644
+--- /dev/null	(date 1725988546418)
++++ b/app/src/main/res/values/font_certs.xml	(date 1725988546418)
+@@ -0,0 +1,17 @@
++<?xml version="1.0" encoding="utf-8"?>
++<resources>
++    <array name="com_google_android_gms_fonts_certs">
++        <item>@array/com_google_android_gms_fonts_certs_dev</item>
++        <item>@array/com_google_android_gms_fonts_certs_prod</item>
++    </array>
++    <string-array name="com_google_android_gms_fonts_certs_dev">
++        <item>
++            MIIEqDCCA5CgAwIBAgIJANWFuGx90071MA0GCSqGSIb3DQEBBAUAMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTAeFw0wODA0MTUyMzM2NTZaFw0zNTA5MDEyMzM2NTZaMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBANbOLggKv+IxTdGNs8/TGFy0PTP6DHThvbbR24kT9ixcOd9W+EaBPWW+wPPKQmsHxajtWjmQwWfna8mZuSeJS48LIgAZlKkpFeVyxW0qMBujb8X8ETrWy550NaFtI6t9+u7hZeTfHwqNvacKhp1RbE6dBRGWynwMVX8XW8N1+UjFaq6GCJukT4qmpN2afb8sCjUigq0GuMwYXrFVee74bQgLHWGJwPmvmLHC69EH6kWr22ijx4OKXlSIx2xT1AsSHee70w5iDBiK4aph27yH3TxkXy9V89TDdexAcKk/cVHYNnDBapcavl7y0RiQ4biu8ymM8Ga/nmzhRKya6G0cGw8CAQOjgfwwgfkwHQYDVR0OBBYEFI0cxb6VTEM8YYY6FbBMvAPyT+CyMIHJBgNVHSMEgcEwgb6AFI0cxb6VTEM8YYY6FbBMvAPyT+CyoYGapIGXMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbYIJANWFuGx90071MAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEEBQADggEBABnTDPEF+3iSP0wNfdIjIz1AlnrPzgAIHVvXxunW7SBrDhEglQZBbKJEk5kT0mtKoOD1JMrSu1xuTKEBahWRbqHsXclaXjoBADb0kkjVEJu/Lh5hgYZnOjvlba8Ld7HCKePCVePoTJBdI4fvugnL8TsgK05aIskyY0hKI9L8KfqfGTl1lzOv2KoWD0KWwtAWPoGChZxmQ+nBli+gwYMzM1vAkP+aayLe0a1EQimlOalO762r0GXO0ks+UeXde2Z4e+8S/pf7pITEI/tP+MxJTALw9QUWEv9lKTk+jkbqxbsh8nfBUapfKqYn0eidpwq2AzVp3juYl7//fKnaPhJD9gs=
++        </item>
++    </string-array>
++    <string-array name="com_google_android_gms_fonts_certs_prod">
++        <item>
++            MIIEQzCCAyugAwIBAgIJAMLgh0ZkSjCNMA0GCSqGSIb3DQEBBAUAMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDAeFw0wODA4MjEyMzEzMzRaFw0zNjAxMDcyMzEzMzRaMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBAKtWLgDYO6IIrgqWbxJOKdoR8qtW0I9Y4sypEwPpt1TTcvZApxsdyxMJZ2JORland2qSGT2y5b+3JKkedxiLDmpHpDsz2WCbdxgxRczfey5YZnTJ4VZbH0xqWVW/8lGmPav5xVwnIiJS6HXk+BVKZF+JcWjAsb/GEuq/eFdpuzSqeYTcfi6idkyugwfYwXFU1+5fZKUaRKYCwkkFQVfcAs1fXA5V+++FGfvjJ/CxURaSxaBvGdGDhfXE28LWuT9ozCl5xw4Yq5OGazvV24mZVSoOO0yZ31j7kYvtwYK6NeADwbSxDdJEqO4k//0zOHKrUiGYXtqw/A0LFFtqoZKFjnkCAQOjgdkwgdYwHQYDVR0OBBYEFMd9jMIhF1Ylmn/Tgt9r45jk14alMIGmBgNVHSMEgZ4wgZuAFMd9jMIhF1Ylmn/Tgt9r45jk14aloXikdjB0MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLR29vZ2xlIEluYy4xEDAOBgNVBAsTB0FuZHJvaWQxEDAOBgNVBAMTB0FuZHJvaWSCCQDC4IdGZEowjTAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBAUAA4IBAQBt0lLO74UwLDYKqs6Tm8/yzKkEu116FmH4rkaymUIE0P9KaMftGlMexFlaYjzmB2OxZyl6euNXEsQH8gjwyxCUKRJNexBiGcCEyj6z+a1fuHHvkiaai+KL8W1EyNmgjmyy8AW7P+LLlkR+ho5zEHatRbM/YAnqGcFh5iZBqpknHf1SKMXFh4dd239FJ1jWYfbMDMy3NS5CTMQ2XFI1MvcyUTdZPErjQfTbQe3aDQsQcafEQPD+nqActifKZ0Np0IS9L9kR/wbNvyz6ENwPiTrjV2KRkEjH78ZMcUQXg0L3BYHJ3lc69Vs5Ddf9uUGGMYldX3WfMBEmh/9iFBDAaTCK
++        </item>
++    </string-array>
++</resources>
+Index: app/src/main/java/com/lightcore/hhreplica/dataModels/Offers.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/lightcore/hhreplica/dataModels/Offers.kt b/app/src/main/java/com/lightcore/hhreplica/dataModels/Offers.kt
+new file mode 100644
+--- /dev/null	(date 1725973611915)
++++ b/app/src/main/java/com/lightcore/hhreplica/dataModels/Offers.kt	(date 1725973611915)
+@@ -0,0 +1,9 @@
++package com.lightcore.hhreplica.dataModels
++
++data class Offers(
++    val id: String?,
++    val title: String?,
++    val link: String?,
++    val buttonText: String?,
++    val img: String?
++)
+Index: app/src/main/res/drawable/type_____________state_default.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/type_____________state_default.xml b/app/src/main/res/drawable/type_____________state_default.xml
+new file mode 100644
+--- /dev/null	(date 1726002850576)
++++ b/app/src/main/res/drawable/type_____________state_default.xml	(date 1726002850576)
+@@ -0,0 +1,20 @@
++<vector xmlns:android="http://schemas.android.com/apk/res/android"
++    android:width="16dp"
++    android:height="16dp"
++    android:viewportWidth="16"
++    android:viewportHeight="16">
++  <path
++      android:strokeWidth="1"
++      android:pathData="M4,10L7.5,13L11,10"
++      android:strokeLineJoin="round"
++      android:fillColor="#00000000"
++      android:strokeColor="#2B7EFE"
++      android:strokeLineCap="round"/>
++  <path
++      android:strokeWidth="1"
++      android:pathData="M11,5L7.5,2L4,5"
++      android:strokeLineJoin="round"
++      android:fillColor="#00000000"
++      android:strokeColor="#2B7EFE"
++      android:strokeLineCap="round"/>
++</vector>
+Index: app/src/main/res/navigation/mobile_navigation.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/navigation/mobile_navigation.xml b/app/src/main/res/navigation/mobile_navigation.xml
+new file mode 100644
+--- /dev/null	(date 1726002106597)
++++ b/app/src/main/res/navigation/mobile_navigation.xml	(date 1726002106597)
+@@ -0,0 +1,44 @@
++<?xml version="1.0" encoding="utf-8"?>
++<navigation xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:id="@+id/mobile_navigation"
++    app:startDestination="@+id/navigation_home">
++
++    <fragment
++        android:id="@+id/navigation_home"
++        android:name="com.lightcore.hhreplica.ui.home.HomeFragment"
++        android:label="@string/title_home"
++        tools:layout="@layout/fragment_home" >
++        <action
++            android:id="@+id/action_navigation_home_to_fullVacancyList"
++            app:destination="@id/fullVacancyList" />
++    </fragment>
++
++    <fragment
++        android:id="@+id/navigation_dashboard"
++        android:name="com.lightcore.hhreplica.ui.dashboard.DashboardFragment"
++        android:label="@string/title_dashboard"
++        tools:layout="@layout/fragment_dashboard" />
++
++    <fragment
++        android:id="@+id/navigation_notifications"
++        android:name="com.lightcore.hhreplica.ui.notifications.NotificationsFragment"
++        android:label="@string/title_notifications"
++        tools:layout="@layout/fragment_notifications" />
++    <fragment
++        android:id="@+id/messages"
++        android:name="com.lightcore.hhreplica.ui.notifications.NotificationsFragment"
++        android:label="@string/title_notifications"
++        tools:layout="@layout/fragment_notifications" />
++    <fragment
++        android:id="@+id/profile"
++        android:name="com.lightcore.hhreplica.ui.notifications.NotificationsFragment"
++        android:label="@string/title_notifications"
++        tools:layout="@layout/fragment_notifications" />
++    <fragment
++        android:id="@+id/fullVacancyList"
++        android:name="com.lightcore.hhreplica.ui.home.fullVacancyes.FullVacancy"
++        android:label="Полный список вакансий"
++        tools:layout="@layout/fragment_full_vacancy" />
++</navigation>
+\ No newline at end of file
+Index: app/src/main/res/drawable/button_style.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/button_style.xml b/app/src/main/res/drawable/button_style.xml
+new file mode 100644
+--- /dev/null	(date 1725967342573)
++++ b/app/src/main/res/drawable/button_style.xml	(date 1725967342573)
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="utf-8"?>
++<shape xmlns:android="http://schemas.android.com/apk/res/android">
++    <!-- Цвет фона кнопки -->
++    <solid android:color="#313234" />
++
++    <!-- Закругленные углы -->
++    <corners android:radius="10dp" />
++
++</shape>
+\ No newline at end of file
+Index: app/src/main/res/drawable/ic_dashboard_black_24dp.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/ic_dashboard_black_24dp.xml b/app/src/main/res/drawable/ic_dashboard_black_24dp.xml
+new file mode 100644
+--- /dev/null	(date 1725527775838)
++++ b/app/src/main/res/drawable/ic_dashboard_black_24dp.xml	(date 1725527775838)
+@@ -0,0 +1,9 @@
++<vector xmlns:android="http://schemas.android.com/apk/res/android"
++    android:width="24dp"
++    android:height="24dp"
++    android:viewportWidth="24.0"
++    android:viewportHeight="24.0">
++    <path
++        android:fillColor="#FF000000"
++        android:pathData="M3,13h8L11,3L3,3v10zM3,21h8v-6L3,15v6zM13,21h8L21,11h-8v10zM13,3v6h8L21,3h-8z" />
++</vector>
+Index: app/src/main/res/drawable/ic_home_black_24dp.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/ic_home_black_24dp.xml b/app/src/main/res/drawable/ic_home_black_24dp.xml
+new file mode 100644
+--- /dev/null	(date 1725527775815)
++++ b/app/src/main/res/drawable/ic_home_black_24dp.xml	(date 1725527775815)
+@@ -0,0 +1,9 @@
++<vector xmlns:android="http://schemas.android.com/apk/res/android"
++    android:width="24dp"
++    android:height="24dp"
++    android:viewportWidth="24.0"
++    android:viewportHeight="24.0">
++    <path
++        android:fillColor="#FF000000"
++        android:pathData="M10,20v-6h4v6h5v-8h3L12,3 2,12h3v8z" />
++</vector>
+Index: app/src/main/java/com/lightcore/hhreplica/MainActivity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/lightcore/hhreplica/MainActivity.kt b/app/src/main/java/com/lightcore/hhreplica/MainActivity.kt
+new file mode 100644
+--- /dev/null	(date 1725976165271)
++++ b/app/src/main/java/com/lightcore/hhreplica/MainActivity.kt	(date 1725976165271)
+@@ -0,0 +1,37 @@
++package com.lightcore.hhreplica
++
++import android.os.Bundle
++import android.util.Log
++import com.google.android.material.bottomnavigation.BottomNavigationView
++import androidx.appcompat.app.AppCompatActivity
++import androidx.navigation.findNavController
++import androidx.navigation.ui.AppBarConfiguration
++import androidx.navigation.ui.setupActionBarWithNavController
++import androidx.navigation.ui.setupWithNavController
++import com.lightcore.hhreplica.databinding.ActivityMainBinding
++
++class MainActivity : AppCompatActivity() {
++
++    private lateinit var binding: ActivityMainBinding
++
++    override fun onCreate(savedInstanceState: Bundle?) {
++        super.onCreate(savedInstanceState)
++//        val main = Main()
++//        Log.d("Tag", main.getOffers(context = applicationContext).get(0).id.toString())
++        binding = ActivityMainBinding.inflate(layoutInflater)
++        setContentView(binding.root)
++
++        val navView: BottomNavigationView = binding.navView
++
++        val navController = findNavController(R.id.nav_host_fragment_activity_main)
++        // Passing each menu ID as a set of Ids because each
++        // menu should be considered as top level destinations.
++        val appBarConfiguration = AppBarConfiguration(
++            setOf(
++                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications
++            )
++        )
++//        setupActionBarWithNavController(navController, appBarConfiguration)
++        navView.setupWithNavController(navController)
++    }
++}
+\ No newline at end of file
+Index: app/src/main/res/drawable/ic_notifications_black_24dp.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/ic_notifications_black_24dp.xml b/app/src/main/res/drawable/ic_notifications_black_24dp.xml
+new file mode 100644
+--- /dev/null	(date 1725527775854)
++++ b/app/src/main/res/drawable/ic_notifications_black_24dp.xml	(date 1725527775854)
+@@ -0,0 +1,9 @@
++<vector xmlns:android="http://schemas.android.com/apk/res/android"
++    android:width="24dp"
++    android:height="24dp"
++    android:viewportWidth="24.0"
++    android:viewportHeight="24.0">
++    <path
++        android:fillColor="#FF000000"
++        android:pathData="M12,22c1.1,0 2,-0.9 2,-2h-4c0,1.1 0.89,2 2,2zM18,16v-5c0,-3.07 -1.64,-5.64 -4.5,-6.32L13.5,4c0,-0.83 -0.67,-1.5 -1.5,-1.5s-1.5,0.67 -1.5,1.5v0.68C7.63,5.36 6,7.92 6,11v5l-2,2v1h16v-1l-2,-2z" />
++</vector>
+Index: app/src/main/java/com/lightcore/hhreplica/adapters/FullVacancyAdapter.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/lightcore/hhreplica/adapters/FullVacancyAdapter.kt b/app/src/main/java/com/lightcore/hhreplica/adapters/FullVacancyAdapter.kt
+new file mode 100644
+--- /dev/null	(date 1726013399805)
++++ b/app/src/main/java/com/lightcore/hhreplica/adapters/FullVacancyAdapter.kt	(date 1726013399805)
+@@ -0,0 +1,94 @@
++package com.lightcore.hhreplica.adapters
++import android.content.Context
++import android.view.LayoutInflater
++import android.view.View
++import android.view.ViewGroup
++import android.widget.Button
++import android.widget.ImageButton
++import android.widget.TextView
++import androidx.core.content.ContextCompat
++import androidx.fragment.app.FragmentActivity
++import androidx.lifecycle.ViewModelProvider
++import androidx.recyclerview.widget.RecyclerView
++import com.lightcore.hhreplica.R
++import com.lightcore.hhreplica.dataModels.Vacancy
++import com.lightcore.hhreplica.ui.home.HomeViewModel
++
++class FullVacancyAdapter(
++    private val context: Context,
++    private val vacancies: List<Vacancy>,
++) : RecyclerView.Adapter<FullVacancyAdapter.VacancyViewHolder>() {
++
++
++    inner class VacancyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
++        val lookingNumber: TextView = itemView.findViewById(R.id.looktxt)
++        val title: TextView = itemView.findViewById(R.id.vac_name)
++        val salary: TextView = itemView.findViewById(R.id.zp)
++        val city: TextView = itemView.findViewById(R.id.city)
++        val companyName: TextView = itemView.findViewById(R.id.companyName)
++        val experience: TextView = itemView.findViewById(R.id.opit)
++        val datePublished: TextView = itemView.findViewById(R.id.datePublish)
++        val button: Button = itemView.findViewById(R.id.OtklickBtn)
++        val favbtn: ImageButton = itemView.findViewById(R.id.isFavoriteBtn)
++
++        init {
++            button.setOnClickListener {
++//                onButtonClick(vacancies[adapterPosition])
++            }
++            favbtn.setOnClickListener {
++                val vacancy = vacancies[adapterPosition]
++
++                // Обновляем состояние через ViewModel
++                val homeViewModel = ViewModelProvider(context as FragmentActivity).get(HomeViewModel::class.java)
++                homeViewModel.toggleFavorite(vacancy, context)
++                notifyDataSetChanged()
++                notifyItemChanged(adapterPosition) // Обновляем элемент в списке
++            }
++        }
++    }
++
++    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VacancyViewHolder {
++        val view = LayoutInflater.from(context).inflate(R.layout.vacanci_item, parent, false)
++        return VacancyViewHolder(view)
++    }
++
++    override fun onBindViewHolder(holder: VacancyViewHolder, position: Int) {
++        val vacancy = vacancies[position]
++        holder.lookingNumber.text = vacancy.lookingNumber?.let { getHumanReadableViewersCount(it) }
++        holder.title.text = vacancy.title
++        holder.salary.text = vacancy.salary.short ?: ""
++        holder.salary.visibility = if (vacancy.salary.short != null) View.VISIBLE else View.GONE
++        holder.city.text = vacancy.address.town
++        holder.companyName.text = vacancy.company
++        holder.experience.text = vacancy.experience.previewText
++        holder.datePublished.text = vacancy.publishedDate?.let { getCurrentDate(it) }
++        if (vacancy.isFavorite) {
++            holder.favbtn.setImageDrawable(ContextCompat.getDrawable(context, R.drawable.favorite_active_icon))
++        } else {
++            holder.favbtn.setImageDrawable(ContextCompat.getDrawable(context, R.drawable.icon_favorites_default))
++        }
++    }
++
++    override fun getItemCount(): Int {
++        return vacancies.size
++    }
++}
++
++fun getHumanReadableViewersCount(lookingNumber: Int): String {
++    val suffix = when {
++        lookingNumber % 100 in 11..14 -> "человек"
++        lookingNumber % 10 == 1 -> "человек"
++        lookingNumber % 10 in 2..4 -> "человека"
++        else -> "человек"
++    }
++    return "Сейчас просматривает $lookingNumber $suffix"
++}
++
++fun getCurrentDate(string: String): String{
++    val date = string.split("-")
++    val month = date[1].toInt()
++    val months = arrayOf("января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря")
++    val result = "Опубликовано ${date[2]} ${months[month-1]}"
++    return result
++}
++
+Index: app/src/main/res/values/dimens.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/values/dimens.xml b/app/src/main/res/values/dimens.xml
+new file mode 100644
+--- /dev/null	(date 1725527775281)
++++ b/app/src/main/res/values/dimens.xml	(date 1725527775281)
+@@ -0,0 +1,5 @@
++<resources>
++    <!-- Default screen margins, per the Android Design guidelines. -->
++    <dimen name="activity_horizontal_margin">16dp</dimen>
++    <dimen name="activity_vertical_margin">16dp</dimen>
++</resources>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_main.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_main.xml b/app/src/main/res/layout/activity_main.xml
+new file mode 100644
+--- /dev/null	(date 1725976226914)
++++ b/app/src/main/res/layout/activity_main.xml	(date 1725976226914)
+@@ -0,0 +1,33 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:background="@android:color/black">
++
++    <com.google.android.material.bottomnavigation.BottomNavigationView
++        android:id="@+id/nav_view"
++        android:layout_width="0dp"
++        android:layout_height="wrap_content"
++        android:background="@android:color/black"
++        app:itemIconTint="@drawable/nav_item_color"
++        app:itemTextColor="@drawable/nav_item_color"
++        app:menu="@menu/bottom_nav_menu"
++        app:labelVisibilityMode="labeled"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintEnd_toEndOf="parent" />
++    <fragment
++        android:id="@+id/nav_host_fragment_activity_main"
++        android:name="androidx.navigation.fragment.NavHostFragment"
++        android:layout_width="match_parent"
++        android:layout_height="match_parent"
++        app:defaultNavHost="true"
++        app:layout_constraintBottom_toTopOf="@id/nav_view"
++        app:layout_constraintLeft_toLeftOf="parent"
++        app:layout_constraintRight_toRightOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:navGraph="@navigation/mobile_navigation" />
++
++</androidx.constraintlayout.widget.ConstraintLayout>
+Index: app/src/main/res/font/roboto_thin.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/font/roboto_thin.xml b/app/src/main/res/font/roboto_thin.xml
+new file mode 100644
+--- /dev/null	(date 1725988573537)
++++ b/app/src/main/res/font/roboto_thin.xml	(date 1725988573537)
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="utf-8"?>
++<font-family xmlns:app="http://schemas.android.com/apk/res-auto"
++        app:fontProviderAuthority="com.google.android.gms.fonts"
++        app:fontProviderPackage="com.google.android.gms"
++        app:fontProviderQuery="name=Roboto&amp;weight=100"
++        app:fontProviderCerts="@array/com_google_android_gms_fonts_certs">
++</font-family>
+Index: app/src/main/res/drawable/icon_favorites_default.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/icon_favorites_default.xml b/app/src/main/res/drawable/icon_favorites_default.xml
+new file mode 100644
+--- /dev/null	(date 1725530412830)
++++ b/app/src/main/res/drawable/icon_favorites_default.xml	(date 1725530412830)
+@@ -0,0 +1,10 @@
++<vector xmlns:android="http://schemas.android.com/apk/res/android"
++    android:width="24dp"
++    android:height="24dp"
++    android:viewportWidth="24"
++    android:viewportHeight="24">
++  <path
++      android:pathData="M11.379,6.005C11.794,6.509 12,6.909 12,6.909C12,6.909 12.206,6.509 12.621,6.005C13.325,5.151 14.629,4 16.543,4C19.016,4 20.974,6.006 21,8.4C21.051,13.37 16.934,16.904 12.422,19.874C12.297,19.956 12.151,20 12,20C11.849,20 11.703,19.956 11.578,19.874C7.066,16.904 2.949,13.37 3,8.4C3.026,6.006 4.984,4 7.457,4C9.371,4 10.675,5.151 11.379,6.005ZM11.028,20.709C11.318,20.9 11.656,21 12,21C12.344,21 12.682,20.9 12.972,20.709C15.25,19.209 17.504,17.52 19.185,15.533C20.879,13.531 22.028,11.181 22,8.39C21.969,5.457 19.573,3 16.543,3C14.678,3 13.307,3.896 12.437,4.734C12.276,4.889 12.131,5.043 12,5.192C11.869,5.043 11.724,4.889 11.563,4.734C10.693,3.896 9.322,3 7.457,3C4.427,3 2.032,5.456 2.001,8.39C1.972,11.18 3.121,13.531 4.814,15.533C6.495,17.52 8.75,19.21 11.028,20.709Z"
++      android:fillColor="#9F9F9F"
++      android:fillType="evenOdd"/>
++</vector>
+Index: app/schemas/com.lightcore.hhreplica.DB.AppDB/1.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/schemas/com.lightcore.hhreplica.DB.AppDB/1.json b/app/schemas/com.lightcore.hhreplica.DB.AppDB/1.json
+new file mode 100644
+--- /dev/null	(date 1726013633211)
++++ b/app/schemas/com.lightcore.hhreplica.DB.AppDB/1.json	(date 1726013633211)
+@@ -0,0 +1,118 @@
++{
++  "formatVersion": 1,
++  "database": {
++    "version": 1,
++    "identityHash": "e85a447fbe57104ef0a7f42c1e99e362",
++    "entities": [
++      {
++        "tableName": "vacancy",
++        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `lookingnumber` INTEGER, `title` TEXT NOT NULL, `address` TEXT NOT NULL, `company` TEXT NOT NULL, `experience` TEXT NOT NULL, `publisheddate` TEXT NOT NULL, `isfavorite` INTEGER NOT NULL, `salary` TEXT NOT NULL, `schedule` TEXT NOT NULL, `type` TEXT NOT NULL, `appliednumber` INTEGER, `description` TEXT NOT NULL, `responsibilities` TEXT NOT NULL, `questions` TEXT NOT NULL, PRIMARY KEY(`id`))",
++        "fields": [
++          {
++            "fieldPath": "id",
++            "columnName": "id",
++            "affinity": "TEXT",
++            "notNull": true
++          },
++          {
++            "fieldPath": "lookingNumber",
++            "columnName": "lookingnumber",
++            "affinity": "INTEGER",
++            "notNull": false
++          },
++          {
++            "fieldPath": "title",
++            "columnName": "title",
++            "affinity": "TEXT",
++            "notNull": true
++          },
++          {
++            "fieldPath": "address",
++            "columnName": "address",
++            "affinity": "TEXT",
++            "notNull": true
++          },
++          {
++            "fieldPath": "company",
++            "columnName": "company",
++            "affinity": "TEXT",
++            "notNull": true
++          },
++          {
++            "fieldPath": "experience",
++            "columnName": "experience",
++            "affinity": "TEXT",
++            "notNull": true
++          },
++          {
++            "fieldPath": "publishedDate",
++            "columnName": "publisheddate",
++            "affinity": "TEXT",
++            "notNull": true
++          },
++          {
++            "fieldPath": "isFavorite",
++            "columnName": "isfavorite",
++            "affinity": "INTEGER",
++            "notNull": true
++          },
++          {
++            "fieldPath": "salary",
++            "columnName": "salary",
++            "affinity": "TEXT",
++            "notNull": true
++          },
++          {
++            "fieldPath": "schedules",
++            "columnName": "schedule",
++            "affinity": "TEXT",
++            "notNull": true
++          },
++          {
++            "fieldPath": "type",
++            "columnName": "type",
++            "affinity": "TEXT",
++            "notNull": true
++          },
++          {
++            "fieldPath": "appliedNumber",
++            "columnName": "appliednumber",
++            "affinity": "INTEGER",
++            "notNull": false
++          },
++          {
++            "fieldPath": "description",
++            "columnName": "description",
++            "affinity": "TEXT",
++            "notNull": true
++          },
++          {
++            "fieldPath": "responsibilities",
++            "columnName": "responsibilities",
++            "affinity": "TEXT",
++            "notNull": true
++          },
++          {
++            "fieldPath": "questions",
++            "columnName": "questions",
++            "affinity": "TEXT",
++            "notNull": true
++          }
++        ],
++        "primaryKey": {
++          "autoGenerate": false,
++          "columnNames": [
++            "id"
++          ]
++        },
++        "indices": [],
++        "foreignKeys": []
++      }
++    ],
++    "views": [],
++    "setupQueries": [
++      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
++      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'e85a447fbe57104ef0a7f42c1e99e362')"
++    ]
++  }
++}
+\ No newline at end of file
+Index: .idea/studiobot.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/studiobot.xml b/.idea/studiobot.xml
+new file mode 100644
+--- /dev/null	(date 1725988745256)
++++ b/.idea/studiobot.xml	(date 1725988745256)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="StudioBotProjectSettings">
++    <option name="shareContext" value="OptedIn" />
++  </component>
++</project>
+\ No newline at end of file
+Index: app/src/main/res/drawable/oitem_style.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/oitem_style.xml b/app/src/main/res/drawable/oitem_style.xml
+new file mode 100644
+--- /dev/null	(date 1725972708840)
++++ b/app/src/main/res/drawable/oitem_style.xml	(date 1725972708840)
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="utf-8"?>
++<shape xmlns:android="http://schemas.android.com/apk/res/android">
++    <!-- Цвет фона кнопки -->
++    <solid android:color="#222325" />
++
++    <!-- Закругленные углы -->
++    <corners android:radius="8dp" />
++
++</shape>
+\ No newline at end of file
+Index: app/src/main/res/drawable/icon_responses.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/icon_responses.xml b/app/src/main/res/drawable/icon_responses.xml
+new file mode 100644
+--- /dev/null	(date 1725530576038)
++++ b/app/src/main/res/drawable/icon_responses.xml	(date 1725530576038)
+@@ -0,0 +1,13 @@
++<vector xmlns:android="http://schemas.android.com/apk/res/android"
++    android:width="24dp"
++    android:height="24dp"
++    android:viewportWidth="24"
++    android:viewportHeight="24">
++  <path
++      android:strokeWidth="1"
++      android:pathData="M3.2,6.2L11.599,11.6L20.6,6.2M4.4,19.191C3.074,19.191 2,18.117 2,16.791V7.4C2,6.075 3.074,5 4.4,5H18.799C20.125,5 21.199,6.075 21.199,7.4V16.791C21.199,18.117 20.125,19.191 18.799,19.191H4.4Z"
++      android:strokeLineJoin="round"
++      android:fillColor="#00000000"
++      android:strokeColor="#9F9F9F"
++      android:strokeLineCap="round"/>
++</vector>
+Index: app/src/main/res/drawable/temp_icon.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/temp_icon.xml b/app/src/main/res/drawable/temp_icon.xml
+new file mode 100644
+--- /dev/null	(date 1725972905340)
++++ b/app/src/main/res/drawable/temp_icon.xml	(date 1725972905340)
+@@ -0,0 +1,16 @@
++<vector xmlns:android="http://schemas.android.com/apk/res/android"
++    android:width="32dp"
++    android:height="32dp"
++    android:viewportWidth="32"
++    android:viewportHeight="32">
++  <path
++      android:pathData="M16,16m-16,0a16,16 0,1 1,32 0a16,16 0,1 1,-32 0"
++      android:fillColor="#015905"/>
++  <path
++      android:strokeWidth="1"
++      android:pathData="M14.663,24H10.888C9.845,24 9,23.105 9,22L9,10C9,8.895 9.845,8 10.888,8H19.382C20.425,8 21.27,8.895 21.27,10V15.5M17.494,21.167L19.225,23L23,19M12.304,12H17.966M12.304,15H17.966M12.304,18H15.135"
++      android:strokeLineJoin="round"
++      android:fillColor="#00000000"
++      android:strokeColor="#4CB24E"
++      android:strokeLineCap="round"/>
++</vector>
+Index: app/src/main/res/drawable/up_search_icon.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/up_search_icon.xml b/app/src/main/res/drawable/up_search_icon.xml
+new file mode 100644
+--- /dev/null	(date 1725972863379)
++++ b/app/src/main/res/drawable/up_search_icon.xml	(date 1725972863379)
+@@ -0,0 +1,14 @@
++<vector xmlns:android="http://schemas.android.com/apk/res/android"
++    android:width="32dp"
++    android:height="32dp"
++    android:viewportWidth="32"
++    android:viewportHeight="32">
++  <path
++      android:pathData="M16,16m-16,0a16,16 0,1 1,32 0a16,16 0,1 1,-32 0"
++      android:fillColor="#015905"/>
++  <path
++      android:strokeWidth="1"
++      android:pathData="M15.732,7.654C15.842,7.433 16.158,7.433 16.268,7.654L18.33,11.775C18.519,12.153 18.88,12.416 19.298,12.479L23.854,13.166C24.099,13.203 24.196,13.503 24.02,13.676L20.738,16.91C20.437,17.207 20.299,17.632 20.368,18.049L21.123,22.594C21.163,22.838 20.908,23.024 20.688,22.91L16.599,20.787C16.223,20.593 15.777,20.593 15.401,20.787L11.311,22.91C11.092,23.024 10.837,22.838 10.877,22.594L11.632,18.049C11.701,17.632 11.563,17.207 11.262,16.91L7.98,13.676C7.804,13.503 7.901,13.203 8.145,13.166L12.702,12.479C13.12,12.416 13.481,12.153 13.67,11.775L15.732,7.654Z"
++      android:fillColor="#00000000"
++      android:strokeColor="#4CB24E"/>
++</vector>
+Index: app/src/main/res/layout/offers_item.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/offers_item.xml b/app/src/main/res/layout/offers_item.xml
+new file mode 100644
+--- /dev/null	(date 1725997226210)
++++ b/app/src/main/res/layout/offers_item.xml	(date 1725997226210)
+@@ -0,0 +1,40 @@
++<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="132dp"
++    android:layout_height="120dp"
++    android:layout_gravity="center"
++    android:layout_margin="4dp"
++    android:background="@drawable/oitem_style"
++    android:gravity="start|top"
++    android:orientation="vertical"
++    android:padding="8dp">
++
++    <ImageView
++        android:id="@+id/icon_offer"
++        android:layout_width="32dp"
++        android:layout_height="32dp"
++        android:layout_gravity="start|top"
++        android:scaleType="centerInside"
++        tools:srcCompat="@drawable/ryadom_icon" />
++
++    <TextView
++        android:id="@+id/title"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_marginTop="10dp"
++        android:gravity="start|top"
++        android:maxLines="2"
++        android:singleLine="false"
++        android:textColor="@android:color/white"
++        android:textSize="14sp" />
++
++    <TextView
++        android:id="@+id/btn"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:gravity="start|top"
++        android:textColor="#4CB24E"
++        android:textSize="14sp" />
++
++</LinearLayout>
+Index: app/src/main/java/com/lightcore/hhreplica/adapters/OffersRecAdapter.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/lightcore/hhreplica/adapters/OffersRecAdapter.kt b/app/src/main/java/com/lightcore/hhreplica/adapters/OffersRecAdapter.kt
+new file mode 100644
+--- /dev/null	(date 1725996852888)
++++ b/app/src/main/java/com/lightcore/hhreplica/adapters/OffersRecAdapter.kt	(date 1725996852888)
+@@ -0,0 +1,62 @@
++import android.content.Context
++import android.view.LayoutInflater
++import android.view.View
++import android.view.ViewGroup
++import android.widget.ImageView
++import android.widget.TextView
++import androidx.appcompat.content.res.AppCompatResources
++import androidx.recyclerview.widget.RecyclerView
++import com.lightcore.hhreplica.R
++import com.lightcore.hhreplica.adapters.OnItemClickListener
++import com.lightcore.hhreplica.dataModels.Offers
++
++class OffersRecAdapter(
++    private val offers: List<Offers>,
++    private val context: Context,
++    private val listener: OnItemClickListener
++) : RecyclerView.Adapter<OffersRecAdapter.OfferViewHolder>() {
++
++    class OfferViewHolder(itemView: View, listener: OnItemClickListener) : RecyclerView.ViewHolder(itemView) {
++        val title: TextView = itemView.findViewById(R.id.title)
++        val icon: ImageView = itemView.findViewById(R.id.icon_offer)
++        val btntext: TextView = itemView.findViewById(R.id.btn)
++
++        init {
++            itemView.setOnClickListener {
++                listener.onItemClick(itemView.tag as Offers) // Передаем объект Offers
++            }
++        }
++    }
++
++    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): OfferViewHolder {
++        val view = LayoutInflater.from(parent.context)
++            .inflate(R.layout.offers_item, parent, false)
++        return OfferViewHolder(view, listener)
++    }
++
++    override fun onBindViewHolder(holder: OfferViewHolder, position: Int) {
++        val offer = offers[position]
++        holder.title.text = offer.title
++        holder.btntext.text = offer.buttonText
++
++        // Устанавливаем иконку
++        val iconResId = context.resources.getIdentifier(offer.img, "drawable", context.packageName)
++        if (iconResId != 0) {
++            val drawable = AppCompatResources.getDrawable(context, iconResId)
++            if (drawable != null) {
++                holder.icon.setImageDrawable(drawable)
++            } else {
++                holder.icon.visibility = View.GONE
++            }
++        } else {
++            holder.icon.visibility = View.GONE
++        }
++
++        // Устанавливаем объект Offers как тег элемента
++        holder.itemView.tag = offer
++    }
++
++    override fun getItemCount(): Int {
++        return offers.size
++    }
++}
+Index: app/src/main/res/drawable/icon_search.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/icon_search.xml b/app/src/main/res/drawable/icon_search.xml
+new file mode 100644
+--- /dev/null	(date 1725530145719)
++++ b/app/src/main/res/drawable/icon_search.xml	(date 1725530145719)
+@@ -0,0 +1,12 @@
++<vector xmlns:android="http://schemas.android.com/apk/res/android"
++    android:width="24dp"
++    android:height="24dp"
++    android:viewportWidth="24"
++    android:viewportHeight="24">
++  <path
++      android:strokeWidth="1"
++      android:pathData="M16.692,16.8L20,20M11.429,7.429C13.322,7.429 14.857,8.964 14.857,10.857M18.933,11.467C18.933,15.59 15.59,18.933 11.467,18.933C7.343,18.933 4,15.59 4,11.467C4,7.343 7.343,4 11.467,4C15.59,4 18.933,7.343 18.933,11.467Z"
++      android:fillColor="#00000000"
++      android:strokeColor="#2B7EFE"
++      android:strokeLineCap="round"/>
++</vector>
+Index: app/src/main/java/com/lightcore/hhreplica/DB/Converters.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/lightcore/hhreplica/DB/Converters.kt b/app/src/main/java/com/lightcore/hhreplica/DB/Converters.kt
+new file mode 100644
+--- /dev/null	(date 1726010114695)
++++ b/app/src/main/java/com/lightcore/hhreplica/DB/Converters.kt	(date 1726010114695)
+@@ -0,0 +1,65 @@
++package com.lightcore.hhreplica.DB
++
++import androidx.room.TypeConverter
++import com.google.gson.Gson
++import com.google.gson.reflect.TypeToken
++import com.lightcore.hhreplica.dataModels.Address
++import com.lightcore.hhreplica.dataModels.Experience
++import com.lightcore.hhreplica.dataModels.Salary
++
++class Converters {
++
++    private val gson = Gson()
++
++    @TypeConverter
++    fun fromSalary(salary: Salary?): String? {
++        return salary?.let { gson.toJson(it) }
++    }
++
++    @TypeConverter
++    fun toSalary(data: String?): Salary? {
++        return data?.let {
++            val type = object : TypeToken<Salary>() {}.type
++            gson.fromJson(it, type)
++        }
++    }
++
++    @TypeConverter
++    fun fromAddress(address: Address?): String? {
++        return address?.let { gson.toJson(it) }
++    }
++
++    @TypeConverter
++    fun toAddress(data: String?): Address? {
++        return data?.let {
++            val type = object : TypeToken<Address>() {}.type
++            gson.fromJson(it, type)
++        }
++    }
++
++    @TypeConverter
++    fun fromExperience(experience: Experience?): String? {
++        return experience?.let { gson.toJson(it) }
++    }
++
++    @TypeConverter
++    fun toExperience(data: String?): Experience? {
++        return data?.let {
++            val type = object : TypeToken<Experience>() {}.type
++            gson.fromJson(it, type)
++        }
++    }
++
++    @TypeConverter
++    fun fromStringList(list: List<String>?): String? {
++        return list?.let { gson.toJson(it) }
++    }
++
++    @TypeConverter
++    fun toStringList(data: String?): List<String>? {
++        return data?.let {
++            val type = object : TypeToken<List<String>>() {}.type
++            gson.fromJson(it, type)
++        }
++    }
++}
+Index: app/src/main/res/drawable/ryadom_icon.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/drawable/ryadom_icon.xml b/app/src/main/res/drawable/ryadom_icon.xml
+new file mode 100644
+--- /dev/null	(date 1725972931016)
++++ b/app/src/main/res/drawable/ryadom_icon.xml	(date 1725972931016)
+@@ -0,0 +1,9 @@
++<vector xmlns:android="http://schemas.android.com/apk/res/android"
++    android:width="32dp"
++    android:height="32dp"
++    android:viewportWidth="32"
++    android:viewportHeight="32">
++  <path
++      android:pathData="M16,16m-16,0a16,16 0,1 1,32 0a16,16 0,1 1,-32 0"
++      android:fillColor="#00427D"/>
++</vector>
+Index: app/src/main/java/com/lightcore/hhreplica/DB/AppDB.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/lightcore/hhreplica/DB/AppDB.kt b/app/src/main/java/com/lightcore/hhreplica/DB/AppDB.kt
+new file mode 100644
+--- /dev/null	(date 1726011173808)
++++ b/app/src/main/java/com/lightcore/hhreplica/DB/AppDB.kt	(date 1726011173808)
+@@ -0,0 +1,30 @@
++package com.lightcore.hhreplica.DB
++
++import android.content.Context
++import androidx.room.Database
++import androidx.room.Room
++import androidx.room.RoomDatabase
++import androidx.room.TypeConverters
++import com.lightcore.hhreplica.dataModels.Vacancy
++
++@Database(entities = [Vacancy::class], version = 1)
++@TypeConverters(Converters::class)
++abstract class AppDB : RoomDatabase() {
++    abstract fun vacancyDao(): VacancyDAO
++    companion object {
++        @Volatile
++        private var INSTANCE: AppDB? = null
++
++        fun getDatabase(context: Context): AppDB {
++            return INSTANCE ?: synchronized(this) {
++                val instance = Room.databaseBuilder(
++                    context.applicationContext,
++                    AppDB::class.java,
++                    "app_database"
++                ).build()
++                INSTANCE = instance
++                instance
++            }
++        }
++    }
++}
+\ No newline at end of file
+Index: gradlew
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/gradlew b/gradlew
+new file mode 100644
+--- /dev/null	(date 1725527772441)
++++ b/gradlew	(date 1725527772441)
+@@ -0,0 +1,185 @@
++#!/usr/bin/env sh
++
++#
++# Copyright 2015 the original author or authors.
++#
++# Licensed under the Apache License, Version 2.0 (the "License");
++# you may not use this file except in compliance with the License.
++# You may obtain a copy of the License at
++#
++#      https://www.apache.org/licenses/LICENSE-2.0
++#
++# Unless required by applicable law or agreed to in writing, software
++# distributed under the License is distributed on an "AS IS" BASIS,
++# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
++# See the License for the specific language governing permissions and
++# limitations under the License.
++#
++
++##############################################################################
++##
++##  Gradle start up script for UN*X
++##
++##############################################################################
++
++# Attempt to set APP_HOME
++# Resolve links: $0 may be a link
++PRG="$0"
++# Need this for relative symlinks.
++while [ -h "$PRG" ] ; do
++    ls=`ls -ld "$PRG"`
++    link=`expr "$ls" : '.*-> \(.*\)$'`
++    if expr "$link" : '/.*' > /dev/null; then
++        PRG="$link"
++    else
++        PRG=`dirname "$PRG"`"/$link"
++    fi
++done
++SAVED="`pwd`"
++cd "`dirname \"$PRG\"`/" >/dev/null
++APP_HOME="`pwd -P`"
++cd "$SAVED" >/dev/null
++
++APP_NAME="Gradle"
++APP_BASE_NAME=`basename "$0"`
++
++# Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
++DEFAULT_JVM_OPTS='"-Xmx64m" "-Xms64m"'
++
++# Use the maximum available, or set MAX_FD != -1 to use that value.
++MAX_FD="maximum"
++
++warn () {
++    echo "$*"
++}
++
++die () {
++    echo
++    echo "$*"
++    echo
++    exit 1
++}
++
++# OS specific support (must be 'true' or 'false').
++cygwin=false
++msys=false
++darwin=false
++nonstop=false
++case "`uname`" in
++  CYGWIN* )
++    cygwin=true
++    ;;
++  Darwin* )
++    darwin=true
++    ;;
++  MINGW* )
++    msys=true
++    ;;
++  NONSTOP* )
++    nonstop=true
++    ;;
++esac
++
++CLASSPATH=$APP_HOME/gradle/wrapper/gradle-wrapper.jar
++
++
++# Determine the Java command to use to start the JVM.
++if [ -n "$JAVA_HOME" ] ; then
++    if [ -x "$JAVA_HOME/jre/sh/java" ] ; then
++        # IBM's JDK on AIX uses strange locations for the executables
++        JAVACMD="$JAVA_HOME/jre/sh/java"
++    else
++        JAVACMD="$JAVA_HOME/bin/java"
++    fi
++    if [ ! -x "$JAVACMD" ] ; then
++        die "ERROR: JAVA_HOME is set to an invalid directory: $JAVA_HOME
++
++Please set the JAVA_HOME variable in your environment to match the
++location of your Java installation."
++    fi
++else
++    JAVACMD="java"
++    which java >/dev/null 2>&1 || die "ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH.
++
++Please set the JAVA_HOME variable in your environment to match the
++location of your Java installation."
++fi
++
++# Increase the maximum file descriptors if we can.
++if [ "$cygwin" = "false" -a "$darwin" = "false" -a "$nonstop" = "false" ] ; then
++    MAX_FD_LIMIT=`ulimit -H -n`
++    if [ $? -eq 0 ] ; then
++        if [ "$MAX_FD" = "maximum" -o "$MAX_FD" = "max" ] ; then
++            MAX_FD="$MAX_FD_LIMIT"
++        fi
++        ulimit -n $MAX_FD
++        if [ $? -ne 0 ] ; then
++            warn "Could not set maximum file descriptor limit: $MAX_FD"
++        fi
++    else
++        warn "Could not query maximum file descriptor limit: $MAX_FD_LIMIT"
++    fi
++fi
++
++# For Darwin, add options to specify how the application appears in the dock
++if $darwin; then
++    GRADLE_OPTS="$GRADLE_OPTS \"-Xdock:name=$APP_NAME\" \"-Xdock:icon=$APP_HOME/media/gradle.icns\""
++fi
++
++# For Cygwin or MSYS, switch paths to Windows format before running java
++if [ "$cygwin" = "true" -o "$msys" = "true" ] ; then
++    APP_HOME=`cygpath --path --mixed "$APP_HOME"`
++    CLASSPATH=`cygpath --path --mixed "$CLASSPATH"`
++
++    JAVACMD=`cygpath --unix "$JAVACMD"`
++
++    # We build the pattern for arguments to be converted via cygpath
++    ROOTDIRSRAW=`find -L / -maxdepth 1 -mindepth 1 -type d 2>/dev/null`
++    SEP=""
++    for dir in $ROOTDIRSRAW ; do
++        ROOTDIRS="$ROOTDIRS$SEP$dir"
++        SEP="|"
++    done
++    OURCYGPATTERN="(^($ROOTDIRS))"
++    # Add a user-defined pattern to the cygpath arguments
++    if [ "$GRADLE_CYGPATTERN" != "" ] ; then
++        OURCYGPATTERN="$OURCYGPATTERN|($GRADLE_CYGPATTERN)"
++    fi
++    # Now convert the arguments - kludge to limit ourselves to /bin/sh
++    i=0
++    for arg in "$@" ; do
++        CHECK=`echo "$arg"|egrep -c "$OURCYGPATTERN" -`
++        CHECK2=`echo "$arg"|egrep -c "^-"`                                 ### Determine if an option
++
++        if [ $CHECK -ne 0 ] && [ $CHECK2 -eq 0 ] ; then                    ### Added a condition
++            eval `echo args$i`=`cygpath --path --ignore --mixed "$arg"`
++        else
++            eval `echo args$i`="\"$arg\""
++        fi
++        i=`expr $i + 1`
++    done
++    case $i in
++        0) set -- ;;
++        1) set -- "$args0" ;;
++        2) set -- "$args0" "$args1" ;;
++        3) set -- "$args0" "$args1" "$args2" ;;
++        4) set -- "$args0" "$args1" "$args2" "$args3" ;;
++        5) set -- "$args0" "$args1" "$args2" "$args3" "$args4" ;;
++        6) set -- "$args0" "$args1" "$args2" "$args3" "$args4" "$args5" ;;
++        7) set -- "$args0" "$args1" "$args2" "$args3" "$args4" "$args5" "$args6" ;;
++        8) set -- "$args0" "$args1" "$args2" "$args3" "$args4" "$args5" "$args6" "$args7" ;;
++        9) set -- "$args0" "$args1" "$args2" "$args3" "$args4" "$args5" "$args6" "$args7" "$args8" ;;
++    esac
++fi
++
++# Escape application args
++save () {
++    for i do printf %s\\n "$i" | sed "s/'/'\\\\''/g;1s/^/'/;\$s/\$/' \\\\/" ; done
++    echo " "
++}
++APP_ARGS=`save "$@"`
++
++# Collect all arguments for the java command, following the shell quoting and substitution rules
++eval set -- $DEFAULT_JVM_OPTS $JAVA_OPTS $GRADLE_OPTS "\"-Dorg.gradle.appname=$APP_BASE_NAME\"" -classpath "\"$CLASSPATH\"" org.gradle.wrapper.GradleWrapperMain "$APP_ARGS"
++
++exec "$JAVACMD" "$@"
+Index: gradle/wrapper/gradle-wrapper.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>ISO-8859-1
+===================================================================
+diff --git a/gradle/wrapper/gradle-wrapper.properties b/gradle/wrapper/gradle-wrapper.properties
+new file mode 100644
+--- /dev/null	(date 1725527776028)
++++ b/gradle/wrapper/gradle-wrapper.properties	(date 1725527776028)
+@@ -0,0 +1,6 @@
++#Thu Sep 05 14:16:16 QYZT 2024
++distributionBase=GRADLE_USER_HOME
++distributionPath=wrapper/dists
++distributionUrl=https\://services.gradle.org/distributions/gradle-8.6-bin.zip
++zipStoreBase=GRADLE_USER_HOME
++zipStorePath=wrapper/dists
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1725964024957)
++++ b/.idea/misc.xml	(date 1725964024957)
+@@ -0,0 +1,9 @@
++<project version="4">
++  <component name="ExternalStorageConfigurationManager" enabled="true" />
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/build/classes" />
++  </component>
++  <component name="ProjectType">
++    <option name="id" value="Android" />
++  </component>
++</project>
+\ No newline at end of file
+Index: gradle/libs.versions.toml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/gradle/libs.versions.toml b/gradle/libs.versions.toml
+new file mode 100644
+--- /dev/null	(date 1726009422503)
++++ b/gradle/libs.versions.toml	(date 1726009422503)
+@@ -0,0 +1,45 @@
++[versions]
++agp = "8.4.0-rc02"
++gson = "2.10.1"
++kotlin = "1.9.0"
++coreKtx = "1.13.1"
++junit = "4.13.2"
++junitVersion = "1.1.5"
++espressoCore = "3.5.1"
++appcompat = "1.7.0"
++material = "1.12.0"
++constraintlayout = "2.1.4"
++lifecycleLivedataKtx = "2.8.2"
++lifecycleViewmodelKtx = "2.8.2"
++navigationFragmentKtx = "2.7.7"
++navigationUiKtx = "2.7.7"
++roomRuntime = "2.6.1"
++firebaseCrashlyticsBuildtools = "3.0.2"
++
++[libraries]
++androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
++androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomRuntime" }
++androidx-room-guava = { module = "androidx.room:room-guava", version.ref = "roomRuntime" }
++androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomRuntime" }
++androidx-room-paging = { module = "androidx.room:room-paging", version.ref = "roomRuntime" }
++androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntime" }
++androidx-room-rxjava2 = { module = "androidx.room:room-rxjava2", version.ref = "roomRuntime" }
++androidx-room-rxjava3 = { module = "androidx.room:room-rxjava3", version.ref = "roomRuntime" }
++androidx-room-testing = { module = "androidx.room:room-testing", version.ref = "roomRuntime" }
++gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
++junit = { group = "junit", name = "junit", version.ref = "junit" }
++androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
++androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
++androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
++material = { group = "com.google.android.material", name = "material", version.ref = "material" }
++androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
++androidx-lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycleLivedataKtx" }
++androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
++androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
++androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
++firebase-crashlytics-buildtools = { group = "com.google.firebase", name = "firebase-crashlytics-buildtools", version.ref = "firebaseCrashlyticsBuildtools" }
++
++[plugins]
++android-application = { id = "com.android.application", version.ref = "agp" }
++jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
++
+Index: gradlew.bat
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/gradlew.bat b/gradlew.bat
+new file mode 100644
+--- /dev/null	(date 1725527772453)
++++ b/gradlew.bat	(date 1725527772453)
+@@ -0,0 +1,89 @@
++@rem
++@rem Copyright 2015 the original author or authors.
++@rem
++@rem Licensed under the Apache License, Version 2.0 (the "License");
++@rem you may not use this file except in compliance with the License.
++@rem You may obtain a copy of the License at
++@rem
++@rem      https://www.apache.org/licenses/LICENSE-2.0
++@rem
++@rem Unless required by applicable law or agreed to in writing, software
++@rem distributed under the License is distributed on an "AS IS" BASIS,
++@rem WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
++@rem See the License for the specific language governing permissions and
++@rem limitations under the License.
++@rem
++
++@if "%DEBUG%" == "" @echo off
++@rem ##########################################################################
++@rem
++@rem  Gradle startup script for Windows
++@rem
++@rem ##########################################################################
++
++@rem Set local scope for the variables with windows NT shell
++if "%OS%"=="Windows_NT" setlocal
++
++set DIRNAME=%~dp0
++if "%DIRNAME%" == "" set DIRNAME=.
++set APP_BASE_NAME=%~n0
++set APP_HOME=%DIRNAME%
++
++@rem Resolve any "." and ".." in APP_HOME to make it shorter.
++for %%i in ("%APP_HOME%") do set APP_HOME=%%~fi
++
++@rem Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
++set DEFAULT_JVM_OPTS="-Xmx64m" "-Xms64m"
++
++@rem Find java.exe
++if defined JAVA_HOME goto findJavaFromJavaHome
++
++set JAVA_EXE=java.exe
++%JAVA_EXE% -version >NUL 2>&1
++if "%ERRORLEVEL%" == "0" goto execute
++
++echo.
++echo ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH.
++echo.
++echo Please set the JAVA_HOME variable in your environment to match the
++echo location of your Java installation.
++
++goto fail
++
++:findJavaFromJavaHome
++set JAVA_HOME=%JAVA_HOME:"=%
++set JAVA_EXE=%JAVA_HOME%/bin/java.exe
++
++if exist "%JAVA_EXE%" goto execute
++
++echo.
++echo ERROR: JAVA_HOME is set to an invalid directory: %JAVA_HOME%
++echo.
++echo Please set the JAVA_HOME variable in your environment to match the
++echo location of your Java installation.
++
++goto fail
++
++:execute
++@rem Setup the command line
++
++set CLASSPATH=%APP_HOME%\gradle\wrapper\gradle-wrapper.jar
++
++
++@rem Execute Gradle
++"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %GRADLE_OPTS% "-Dorg.gradle.appname=%APP_BASE_NAME%" -classpath "%CLASSPATH%" org.gradle.wrapper.GradleWrapperMain %*
++
++:end
++@rem End local scope for the variables with windows NT shell
++if "%ERRORLEVEL%"=="0" goto mainEnd
++
++:fail
++rem Set variable GRADLE_EXIT_CONSOLE if you need the _script_ return code instead of
++rem the _cmd.exe /c_ return code!
++if  not "" == "%GRADLE_EXIT_CONSOLE%" exit 1
++exit /b 1
++
++:mainEnd
++if "%OS%"=="Windows_NT" endlocal
++
++:omega
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+new file mode 100644
+--- /dev/null	(date 1725618588394)
++++ b/.idea/gradle.xml	(date 1725618588394)
+@@ -0,0 +1,19 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="GradleMigrationSettings" migrationVersion="1" />
++  <component name="GradleSettings">
++    <option name="linkedExternalProjectsSettings">
++      <GradleProjectSettings>
++        <option name="externalProjectPath" value="$PROJECT_DIR$" />
++        <option name="gradleJvm" value="#GRADLE_LOCAL_JAVA_HOME" />
++        <option name="modules">
++          <set>
++            <option value="$PROJECT_DIR$" />
++            <option value="$PROJECT_DIR$/app" />
++          </set>
++        </option>
++        <option name="resolveExternalAnnotations" value="false" />
++      </GradleProjectSettings>
++    </option>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+new file mode 100644
+--- /dev/null	(date 1725533557584)
++++ b/.idea/compiler.xml	(date 1725533557584)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CompilerConfiguration">
++    <bytecodeTargetLevel target="17" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/migrations.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/migrations.xml b/.idea/migrations.xml
+new file mode 100644
+--- /dev/null	(date 1725533557660)
++++ b/.idea/migrations.xml	(date 1725533557660)
+@@ -0,0 +1,10 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectMigrations">
++    <option name="MigrateToGradleLocalJavaHome">
++      <set>
++        <option value="$PROJECT_DIR$" />
++      </set>
++    </option>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/kotlinc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/kotlinc.xml b/.idea/kotlinc.xml
+new file mode 100644
+--- /dev/null	(date 1725533557644)
++++ b/.idea/kotlinc.xml	(date 1725533557644)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="KotlinJpsPluginSettings">
++    <option name="version" value="1.9.0" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+--- /dev/null	(date 1725527772375)
++++ b/.gitignore	(date 1725527772375)
+@@ -0,0 +1,15 @@
++*.iml
++.gradle
++/local.properties
++/.idea/caches
++/.idea/libraries
++/.idea/modules.xml
++/.idea/workspace.xml
++/.idea/navEditor.xml
++/.idea/assetWizardSettings.xml
++.DS_Store
++/build
++/captures
++.externalNativeBuild
++.cxx
++local.properties
+Index: build.gradle.kts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/build.gradle.kts b/build.gradle.kts
+new file mode 100644
+--- /dev/null	(date 1726008399843)
++++ b/build.gradle.kts	(date 1726008399843)
+@@ -0,0 +1,5 @@
++// Top-level build file where you can add configuration options common to all sub-projects/modules.
++plugins {
++    alias(libs.plugins.android.application) apply false
++    alias(libs.plugins.jetbrains.kotlin.android) apply false
++}
+\ No newline at end of file
+Index: gradle.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>ISO-8859-1
+===================================================================
+diff --git a/gradle.properties b/gradle.properties
+new file mode 100644
+--- /dev/null	(date 1725527772745)
++++ b/gradle.properties	(date 1725527772745)
+@@ -0,0 +1,23 @@
++# Project-wide Gradle settings.
++# IDE (e.g. Android Studio) users:
++# Gradle settings configured through the IDE *will override*
++# any settings specified in this file.
++# For more details on how to configure your build environment visit
++# http://www.gradle.org/docs/current/userguide/build_environment.html
++# Specifies the JVM arguments used for the daemon process.
++# The setting is particularly useful for tweaking memory settings.
++org.gradle.jvmargs=-Xmx2048m -Dfile.encoding=UTF-8
++# When configured, Gradle will run in incubating parallel mode.
++# This option should only be used with decoupled projects. For more details, visit
++# https://developer.android.com/r/tools/gradle-multi-project-decoupled-projects
++# org.gradle.parallel=true
++# AndroidX package structure to make it clearer which packages are bundled with the
++# Android operating system, and which are packaged with your app's APK
++# https://developer.android.com/topic/libraries/support-library/androidx-rn
++android.useAndroidX=true
++# Kotlin code style for this project: "official" or "obsolete":
++kotlin.code.style=official
++# Enables namespacing of each library's R class so that its R class includes only the
++# resources declared in the library itself and none from the library's dependencies,
++# thereby reducing the size of the R class for that library
++android.nonTransitiveRClass=true
+\ No newline at end of file
+Index: settings.gradle.kts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/settings.gradle.kts b/settings.gradle.kts
+new file mode 100644
+--- /dev/null	(date 1725527773393)
++++ b/settings.gradle.kts	(date 1725527773393)
+@@ -0,0 +1,24 @@
++pluginManagement {
++    repositories {
++        google {
++            content {
++                includeGroupByRegex("com\\.android.*")
++                includeGroupByRegex("com\\.google.*")
++                includeGroupByRegex("androidx.*")
++            }
++        }
++        mavenCentral()
++        gradlePluginPortal()
++    }
++}
++dependencyResolutionManagement {
++    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
++    repositories {
++        google()
++        mavenCentral()
++    }
++}
++
++rootProject.name = "hhreplica"
++include(":app")
++ 
+\ No newline at end of file

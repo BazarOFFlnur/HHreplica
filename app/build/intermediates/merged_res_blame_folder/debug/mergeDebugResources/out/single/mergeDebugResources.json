@@ -1,0 +1,270 @@
+[
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/drawable_icon_search.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/drawable/icon_search.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/layout_fragment_full_vacancy.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/layout/fragment_full_vacancy.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/drawable_nav_item_color.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/drawable/nav_item_color.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/drawable_oitem_style.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/drawable/oitem_style.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/font_sf_pro_ultralight_italic.otf.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/font/sf_pro_ultralight_italic.otf"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/font_sf_pro_semibold.otf.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/font/sf_pro_semibold.otf"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/font_sf_pro_dblack.otf.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/font/sf_pro_dblack.otf"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/layout_vacanci_item.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/layout/vacanci_item.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/font_sf_pro_blackitalic.otf.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/font/sf_pro_blackitalic.otf"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/layout_fragment_home.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/font_sf_pro_light.otf.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/font/sf_pro_light.otf"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/font_sf_pro_bold.otf.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/font/sf_pro_bold.otf"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/font_sf_pro_regular.otf.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/font/sf_pro_regular.otf"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/layout_activity_main.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/drawable_icon_responses.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/drawable/icon_responses.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/drawable_icon_back.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/drawable/icon_back.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/raw_mock_json.json.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/raw/mock_json.json"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/drawable_ic_notifications_black_24dp.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/drawable/ic_notifications_black_24dp.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/font_sf_pro_bold_italic.otf.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/font/sf_pro_bold_italic.otf"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/font_sf_pro_thinl_italic.otf.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/font/sf_pro_thinl_italic.otf"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/font_sf_pro_heavy.otf.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/font/sf_pro_heavy.otf"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/font_sf_pro_thinl.otf.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/font/sf_pro_thinl.otf"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/drawable_icon_filter.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/drawable/icon_filter.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/font_sf_pro_light_italic.otf.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/font/sf_pro_light_italic.otf"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/drawable_favorite_active_icon.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/drawable/favorite_active_icon.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/layout_fragment_notifications.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/layout/fragment_notifications.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/drawable_up_search_icon.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/drawable/up_search_icon.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/drawable_ic_home_black_24dp.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/drawable/ic_home_black_24dp.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/drawable_edit_style.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/drawable/edit_style.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/drawable_button_style.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/drawable/button_style.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/font_sf_pro_reg_ital.otf.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/font/sf_pro_reg_ital.otf"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/drawable_type_____________state_default.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/drawable/type_____________state_default.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/xml_backup_rules.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/font_sf_pro_medium.otf.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/font/sf_pro_medium.otf"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/drawable_state_default.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/drawable/state_default.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/drawable_icon__3_.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/drawable/icon__3_.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/drawable_temp_icon.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/drawable/temp_icon.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/layout_fragment_dashboard.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/layout/fragment_dashboard.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/font_sf_pro_heavy_italic.otf.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/font/sf_pro_heavy_italic.otf"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/font_sf_pro_ultralight.otf.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/font/sf_pro_ultralight.otf"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/drawable_ryadom_icon.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/drawable/ryadom_icon.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/font_sue_ellen_francisco.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/font/sue_ellen_francisco.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/drawable_otklik_style.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/drawable/otklik_style.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/drawable_ic_dashboard_black_24dp.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/drawable/ic_dashboard_black_24dp.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/drawable_icon_favorites_default.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/drawable/icon_favorites_default.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/xml_data_extraction_rules.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/navigation_mobile_navigation.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/navigation/mobile_navigation.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/font_sf_pro_semibold_iralic.otf.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/font/sf_pro_semibold_iralic.otf"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/drawable_search_default.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/drawable/search_default.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/menu_bottom_nav_menu.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/menu/bottom_nav_menu.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/layout_offers_item.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/layout/offers_item.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/font_sf_pro_mediun_italic.otf.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/font/sf_pro_mediun_italic.otf"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.lightcore.hhreplica.app-debug-56:/font_roboto_thin.xml.flat",
+        "source": "com.lightcore.hhreplica.app-main-58:/font/roboto_thin.xml"
+    }
+]
